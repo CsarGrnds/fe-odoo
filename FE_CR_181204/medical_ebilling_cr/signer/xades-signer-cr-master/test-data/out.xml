@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><FacturaElectronica xmlns="https://tribunet.hacienda.go.cr/docs/esquemas/2017/v4.2/facturaElectronica" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <Clave>50612101700020586086000100001010000000187100000644</Clave>
+    <NumeroConsecutivo>00100001010000000187</NumeroConsecutivo>
+    <FechaEmision>2017-12-29T10:47:42.539375-06:00</FechaEmision>
+    <Emisor>
+        <Nombre>Johan Chaves Saborio</Nombre>
+        <Identificacion>
+            <Tipo>01</Tipo>
+            <Numero>205860860</Numero>
+        </Identificacion>
+        <NombreComercial>Johann Chaves</NombreComercial>
+        <Ubicacion>
+            <Provincia>4</Provincia>
+            <Canton>09</Canton>
+            <Distrito>01</Distrito>
+            <Barrio>01</Barrio>
+            <OtrasSenas>Sabana Sur</OtrasSenas>
+        </Ubicacion>
+        <Telefono>
+            <CodigoPais>506</CodigoPais>
+            <NumTelefono>88862760</NumTelefono>
+        </Telefono>
+        <CorreoElectronico>johann04@gmail.com</CorreoElectronico>
+    </Emisor>
+    <Receptor>
+        <Nombre>Laboratory CLIENTE</Nombre>
+        <Identificacion>
+            <Tipo>02</Tipo>
+            <Numero>3001123208</Numero>
+        </Identificacion>
+        <NombreComercial/>
+        <Ubicacion>
+            <Provincia>1</Provincia>
+            <Canton>01</Canton>
+            <Distrito>01</Distrito>
+            <Barrio>01</Barrio>
+            <OtrasSenas/>
+        </Ubicacion>
+        <Telefono>
+            <CodigoPais>506</CodigoPais>
+            <NumTelefono>83439500</NumTelefono>
+        </Telefono>
+        <CorreoElectronico>rt@prueba.com</CorreoElectronico>
+    </Receptor>
+    <CondicionVenta>02</CondicionVenta>
+    <PlazoCredito>15</PlazoCredito>
+    <MedioPago>04</MedioPago>
+    <DetalleServicio>
+        <LineaDetalle>
+            <NumeroLinea>1</NumeroLinea>
+            <Codigo>
+                <Tipo>04</Tipo>
+                <Codigo>3</Codigo>
+            </Codigo>
+            <Cantidad>1.000</Cantidad>
+            <UnidadMedida>Unid</UnidadMedida>
+            <UnidadMedidaComercial/>
+            <Detalle>Diseño Estructural</Detalle>
+            <PrecioUnitario>1175.00000</PrecioUnitario>
+            <MontoTotal>1175.00000</MontoTotal>
+            <NaturalezaDescuento/>
+            <SubTotal>1175.00000</SubTotal>
+            <MontoTotalLinea>1175.00000</MontoTotalLinea>
+        </LineaDetalle>
+    </DetalleServicio>
+    <ResumenFactura>
+        <CodigoMoneda>USD</CodigoMoneda>
+        <TipoCambio>576.74000</TipoCambio>
+        <TotalServGravados>0.00000</TotalServGravados>
+        <TotalServExentos>1175.00000</TotalServExentos>
+        <TotalMercanciasGravadas>0.00000</TotalMercanciasGravadas>
+        <TotalMercanciasExentas>0.00000</TotalMercanciasExentas>
+        <TotalGravado>0.00000</TotalGravado>
+        <TotalExento>1175.00000</TotalExento>
+        <TotalVenta>1175.00000</TotalVenta>
+        <TotalDescuentos>0.00000</TotalDescuentos>
+        <TotalVentaNeta>1175.00000</TotalVentaNeta>
+        <TotalImpuesto>0.00000</TotalImpuesto>
+        <TotalComprobante>1175.00000</TotalComprobante>
+    </ResumenFactura>
+    <Normativa>
+        <NumeroResolucion>DGT-R-48-2016</NumeroResolucion>
+        <FechaResolucion>20-02-2017 13:22:22</FechaResolucion>
+    </Normativa>
+    <Otros>
+        <OtroTexto codigo="obs">BNCR $ 200-</OtroTexto>
+    </Otros>
+<ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#" Id="xmldsig-df3af3a1-3c83-445d-b65f-d106d30cc54e">
+<ds:SignedInfo>
+<ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"/>
+<ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/>
+<ds:Reference Id="xmldsig-df3af3a1-3c83-445d-b65f-d106d30cc54e-ref0" URI="">
+<ds:Transforms>
+<ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"/>
+</ds:Transforms>
+<ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+<ds:DigestValue>AHn9GIG8lPZpPYnLUQiMsxpHWY31w6FSdGGa9EuXpLs=</ds:DigestValue>
+</ds:Reference>
+<ds:Reference Type="http://uri.etsi.org/01903#SignedProperties" URI="#xmldsig-df3af3a1-3c83-445d-b65f-d106d30cc54e-signedprops">
+<ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+<ds:DigestValue>9NoMbN53OkFMAdjYwvLpBDMZ70nwPJ/pPRrzwQFI/E8=</ds:DigestValue>
+</ds:Reference>
+</ds:SignedInfo>
+<ds:SignatureValue Id="xmldsig-df3af3a1-3c83-445d-b65f-d106d30cc54e-sigvalue">
+U2FBiDNrIKDCoaEEkcRFVgIo20PBJ4WAlnn/QZ8OxPnQYwI/Bl2yPNB4eJPiHw/nR+pHOWiRb7sm
+HYX/5q2DXmTF3L5l1vStKU6i3UXrgA+mE1A69UOB+BiNKIBbOQThiQXcivxIh7PDFUr9QDF4ky4/
+Q4gk00puvJ39VQed9xcyFWUYSF31j6dU6RqDRfcOqjKNC531TzBm3iGxyItxzqKOoslVJfkJVOmS
+2xAotGvmCOu/sKgDeMnWul9dj8lFbrw/lvqdewCLhDW4IiFIhwI18kuQAmxssKSFFAMKIivi8fob
+vER8UI7PdznGegIY4/cwSasPN8n0QVLVJTyJug==
+</ds:SignatureValue>
+<ds:KeyInfo>
+<ds:X509Data>
+<ds:X509Certificate>
+MIIFWzCCA0OgAwIBAgIGAWBnbG9QMA0GCSqGSIb3DQEBCwUAMGwxCzAJBgNVBAYTAkNSMSkwJwYD
+VQQKDCBNSU5JU1RFUklPIERFIEhBQ0lFTkRBIC0gU0FOREJPWDEMMAoGA1UECwwDREdUMSQwIgYD
+VQQDDBtDQSBQRVJTT05BIEZJU0lDQSAtIFNBTkRCT1gwHhcNMTcxMjE4MDIyMDQ3WhcNMTkxMjE4
+MDIyMDQ3WjCBozEZMBcGA1UEBRMQQ1BGLTAyLTA1ODYtMDg2MDEXMBUGA1UEBAwOQ0hBVkVTIFNB
+Qk9SSU8xFDASBgNVBCoMC0pPSEFOIEpPSEFOMQswCQYDVQQGEwJDUjEXMBUGA1UECgwOUEVSU09O
+QSBGSVNJQ0ExDDAKBgNVBAsMA0NQRjEjMCEGA1UEAwwaSk9IQU4gSk9IQU4gQ0hBVkVTIFNBQk9S
+SU8wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQC4KrqSBUr2yX7HYoo0X4ux6eXt7DHA
+OGV5aHlNTxGWvbJzMc1acfG8cWMBkdTbOuY3gCrTfANo7GmU3daPjDxqA+9WH3JKFqy4M/FecO0U
+mC7TmTTm7ZUzZVpzGsC5wxYpZifDN3C1XLZkjCOgtlcuPAcONhZq7nNw3nadgUxgTNA8spG0vQtZ
+CEoDnO0uh35JwdjachMWsjowgTir3G0f6pUAufQceIQI+vfu3nB/7vsTMRSJ3Zwmy/+YYZ3S9IF7
+27AiLsC4seVAg5W2LtEx9/KPQ+Nz9BGFI5OnQ2XsyqN++aZANsAHe0yrH9ALUMZHIjTZu9wAdA5k
+DuB1vZBjAgMBAAGjgcowgccwHwYDVR0jBBgwFoAURiPSRE+/V1kh5L+T1TCblUzj94cwHQYDVR0O
+BBYEFLYD9UalWSniuuKLz+VzbJuIyMviMAsGA1UdDwQEAwIGwDATBgNVHSUEDDAKBggrBgEFBQcD
+BDBjBggrBgEFBQcBAQRXMFUwUwYIKwYBBQUHMAKGR2h0dHBzOi8vcGtpLmNvbXByb2JhbnRlc2Vs
+ZWN0cm9uaWNvcy5nby5jci9zdGFnL2ludGVybWVkaWF0ZS1wZi1wZW0uY3J0MA0GCSqGSIb3DQEB
+CwUAA4ICAQCA+q5GDHUWq5UUFxJzdr3KYvxnBhu7BPAGPwSQYcFQCouTPf5H9KVquJBZHB9WKVp7
+NEh0fp05utJzL1sFWb04suIRG2fgh7/u7bDhTMyvVWMF8NAi1/jFBt2ZxyI7SkTM/UExdzvbHJHU
+gIuSxK7KgMdPXtGjuFNwEaq3ee7pm/MOxlfkOaiv/IyIzvW8ZR+NHToARSJf7j3UQIbJTc4zmdTN
+ZdbMapKmMZSThmCYtdfTcj9k4lH+pY71ea56VklRmDmXvTa4kAGdOJ3IHEZ6y17jvj5znHXL/T1n
+Cj6kTQvsbeMzqn7d9zgAVWOAuHoEX9FQWcfk9LZ9zD2KUcZc/KbA2w1h7Xfg/8ryPFJtkpzbne9X
+FvDEcnFH0ojcnbVX24Hv6cSwqB3TwX50NycSpNr1ujNLPtBnCOfqHUiFP0C7LPeelM+2okRGOjZF
+QbRBvsEq9o2Zi8nHuRLTe17mz7u/2TRltzn4nTlsaUo0I64VWx8AgLh46ZCFM01SdpcONPwU3H0l
+VptiqHV8+cnT4OoviI6oq78emXJx1OMDRCW1ylQ1keQk2N++SKlNQ+e0vFfuVaGW2YP8CoBzzIch
++7HLlaQXQQ/QrqSVHPjCSRDOgciZzwybbifUbEjhmxR52qUFRkSNp+JaYFViwEhYoqFfr05J2GBK
+GtO8jO/8Ag==
+</ds:X509Certificate>
+</ds:X509Data>
+</ds:KeyInfo>
+<ds:Object><xades:QualifyingProperties xmlns:xades="http://uri.etsi.org/01903/v1.3.2#" xmlns:xades141="http://uri.etsi.org/01903/v1.4.1#" Target="#xmldsig-df3af3a1-3c83-445d-b65f-d106d30cc54e"><xades:SignedProperties Id="xmldsig-df3af3a1-3c83-445d-b65f-d106d30cc54e-signedprops"><xades:SignedSignatureProperties><xades:SigningTime>2018-01-05T21:32:12.381-06:00</xades:SigningTime><xades:SigningCertificate><xades:Cert><xades:CertDigest><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><ds:DigestValue>XhmVkDcfVQkHVB4+aOAehIQ9hwppOxPj7Wj3Nsjy9wo=</ds:DigestValue></xades:CertDigest><xades:IssuerSerial><ds:X509IssuerName>CN=CA PERSONA FISICA - SANDBOX,OU=DGT,O=MINISTERIO DE HACIENDA - SANDBOX,C=CR</ds:X509IssuerName><ds:X509SerialNumber>1513563647824</ds:X509SerialNumber></xades:IssuerSerial></xades:Cert></xades:SigningCertificate><xades:SignaturePolicyIdentifier><xades:SignaturePolicyId><xades:SigPolicyId><xades:Identifier>https://tribunet.hacienda.go.cr/docs/esquemas/2017/v4.2/facturaElectronica</xades:Identifier></xades:SigPolicyId><xades:SigPolicyHash><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><ds:DigestValue>nVCrSwvK8dNnGHwfLYAzNAQMe5FCQjMl2Pf+Nfu5IBw=</ds:DigestValue></xades:SigPolicyHash></xades:SignaturePolicyId></xades:SignaturePolicyIdentifier></xades:SignedSignatureProperties></xades:SignedProperties></xades:QualifyingProperties></ds:Object>
+</ds:Signature></FacturaElectronica>

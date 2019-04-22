@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+
+        <record id="action_ebiller" model="ir.actions.act_window">
+            <field name="name">Electronic Biller</field>
+            <field name="res_model">electronic.biller.cr</field>
+            <field name='view_type'>form</field>
+            <field name='view_mode'>tree,form</field>
+        </record>
+
+
+        <record id="ebiller_action_child" model="ir.actions.act_window">
+            <field name="name">Electronic Document</field>
+            <field name="res_model">electronic.document.generic.cr</field>
+            <field name='view_type'>form</field>
+            <field name='view_mode'>tree,form</field>
+            <field name='domain'>[('ebiller_id','=',active_id)]</field>
+            <field name="context">{'default_ebiller_id': active_id}</field>
+        </record>
+
+        <record id="ebiller_form" model="ir.ui.view">
+            <field name="name">electronic.biller.cr.form</field>
+            <field name="model">electronic.biller.cr</field>
+            <field name="arch" type="xml">
+                <form string="Electronic Biller">
+                    <sheet>
+                        <div class="oe_button_box" name="button_box">
+                            <button class="oe_stat_button" name="%(ebiller_action_child)d"
+                                type="action" icon="fa-money" string="Electronic Document">
+                            </button>
+                        </div>
+                        <div class="oe_title">
+                            <h1><field name="name" placeholder="Name"/></h1>
+                            <label for="provider" class="oe_edit_only"/>
+                            <field name="provider" required="1"/>
+                            <label for="active" class="oe_edit_only"/>
+                            <field name="active"/>
+                        </div>
+                        <group name="ebiller_base" col="2">
+                            <group name="ebiller_left" attrs="{'invisible': [('provider', '!=', 'medical_cr')]}">
+                                <field name="version_doc" required="1"/>
+                                <field name="environment" required="1"/>
+                                <field name="current_regulation_rs_number" attrs="{'required': [('provider', '=', 'medical_cr')]}"/>
+                                <field name="current_regulation_rs_date" attrs="{'required': [('provider', '=', 'medical_cr')]}"/>
+                                <field name="current_regulation_rs_date_text" attrs="{'required': [('provider', '=', 'medical_cr')]}"/>
+                                <field name="company_id" options='{"no_open":True}' groups="base.group_multi_company" invisible="1"/>
+                            </group>
+                        </group>
+                        <notebook>
+                            <page string="Credentials" name="credentials">
+                                <group attrs="{'invisible': [('provider', '!=', 'medical_cr')]}">
+                                     <field name="jar_path" attrs="{'required': [('provider', '=', 'medical_cr')]}"/>
+                                </group>
+                            </page>
+                            <page string="Configuration" name="config">
+                                <group attrs="{'invisible': [('provider', '!=', 'medical_cr')]}">
+                                    <!--<field name="emission_type"/>-->
+                                    <field name="auth_endpoint_test" attrs="{'required': [('provider', '=', 'medical_cr')]}"/>
+                                    <field name="auth_endpoint_prod" attrs="{'required': [('provider', '=', 'medical_cr')]}"/>
+                                    <field name="mh_receipt_test_wsdl" attrs="{'required': [('provider', '=', 'medical_cr')]}"/>
+                                    <field name="mh_receipt_prod_wsdl" attrs="{'required': [('provider', '=', 'medical_cr')]}"/>
+                                    <field name="mh_check_test_wsdl" attrs="{'required': [('provider', '=', 'medical_cr')]}"/>
+                                    <field name="mh_check_prod_wsdl" attrs="{'required': [('provider', '=', 'medical_cr')]}"/>
+                                </group>
+                            </page>
+                            <page string="Plantillas" name="templates" attrs="{'invisible': [('provider', '!=', 'medical_cr')]}">
+                                 <group name="ebiller_config">
+                                    <notebook>
+                                        <page string="Facturas">
+                                            <field name="invoice_template"/>
+                                        </page>
+                                        <page string="Notas de crédito">
+										    <field name="refund_template"/>
+										</page>
+										<page string="Notas de débito">
+											<field name="debit_note_template"/>
+										</page>
+										<page string="Electronic Ticket">
+											<field name="electronic_ticket_template"/>
+										</page>
+										<page string="Aceptación/Rechazo">
+											<field name="accuse_acceptance_template"/>
+										</page>
+                                    </notebook>
+                                </group>
+                            </page>
+
+                        </notebook>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="ebiller_list" model="ir.ui.view">
+            <field name="name">electronic.biller.cr.list</field>
+            <field name="model">electronic.biller.cr</field>
+            <field name="arch" type="xml">
+                <tree string="Electronic Biller">
+                    <field name="name"/>
+                    <field name="provider"/>
+                    <field name="environment"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="ebiller_search" model="ir.ui.view">
+            <field name="name">electronic.biller.cr.search</field>
+            <field name="model">electronic.biller.cr</field>
+            <field name="arch" type="xml">
+                <search>
+                    <field name="name"/>
+                    <field name="provider"/>
+                    <group expand="0" string="Group By">
+                        <filter string="Provider" name="provider" domain="[]" context="{'group_by': 'provider'}"/>
+                    </group>
+                </search>
+            </field>
+        </record>
+
+        <record id="action_ebiller" model="ir.actions.act_window">
+            <field name="name">Electronic Biller</field>
+            <field name="res_model">electronic.biller.cr</field>
+            <field name='view_type'>form</field>
+            <field name='view_mode'>tree,form</field>
+        </record>
+
+
+
+    </data>
+</openerp>

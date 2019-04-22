@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+    <data>
+        <menuitem name="Ebillings Center" id="ebilling_menu_parent" sequence="12" groups="account.group_account_invoice"/>
+
+        <menuitem name="Ebillings" id="ebilling_root" sequence="1" parent="ebilling_menu_parent"/>
+
+        <menuitem name="Electronic Documents" action="action_electronic_document_generic" id="ebilling_doc" parent="ebilling_root" sequence="1"/>
+
+        <!--<menuitem action="account.action_invoice_tree1" id="center_menu_action_invoice_tree1_ebilling" parent="ebilling_root" sequence="2"/>-->
+
+        <menuitem name="Configuration" id="ebilling_menu_config" sequence="12" parent="ebilling_menu_parent" groups="base.group_system"/>
+
+        <menuitem action='action_ebiller' id='payment_acquirer_menu' parent='ebilling_menu_config' sequence='1' />
+
+        <menuitem action="action_account_tax_group_list" id="menu_action_account_tax_group_list" parent="account.account_account_menu" sequence="12"/>
+        <menuitem action="action_nature_discount_list" id="menu_action_nature_discount_list" parent="account.account_account_menu" sequence="13"/>
+        <menuitem action="action_invoice_condition_list" id="menu_action_invoice_condition_list" parent="account.account_account_menu" sequence="14"/>
+
+
+    </data>
+</openerp>

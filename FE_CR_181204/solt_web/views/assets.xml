@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- vim:fdn=3:
+-->
+<openerp>
+    <data>
+        <template id="assets_backend" name="solt_web assets" inherit_id="web.assets_backend">
+            <xpath expr="." position="inside">
+                <script type="text/javascript" src="/solt_web/static/src/js/fields.js"></script>
+                <script type="text/javascript" src="/solt_web/static/src/js/widgets.js"></script>
+                <script type="text/javascript" src="/solt_web/static/src/lib/jquery.mask.js"></script>
+                <link rel="stylesheet" href="/solt_web/static/src/less/perncent.less"/>
+                <link rel="stylesheet" href="/solt_web/static/src/css/styles.css"/>
+            </xpath>
+        </template>
+    </data>
+</openerp>

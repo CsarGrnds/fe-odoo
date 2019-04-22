@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+
+        <!-- Tax Group -->
+        <record id="view_account_tax_group_search" model="ir.ui.view">
+            <field name="name">account.tax.group.search</field>
+            <field name="model">account.tax.group</field>
+            <field name="arch" type="xml">
+                <search string="Account Tax Group">
+                    <field name="name" filter_domain="[('name','ilike',self)]" string="Tax Group"/>
+                </search>
+            </field>
+        </record>
+        <record id="view_account_tax_group_tree" model="ir.ui.view">
+            <field name="name">account.tax.group.tree</field>
+            <field name="model">account.tax.group</field>
+            <field name="arch" type="xml">
+                <tree string="Account Tax Group" toolbar="1">
+                    <field name="sequence" widget="handle"/>
+                    <field name="name"/>
+                    <field name="fe_tax_code"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_account_tax_group_form" model="ir.ui.view">
+            <field name="name">account.tax.group.form</field>
+            <field name="model">account.tax.group</field>
+            <field name="arch" type="xml">
+                <form string="Account Tax Group">
+                    <group>
+                        <group col="4" colspan="2">
+                            <field name="name"/>
+                            <field name="sequence"/>
+                            <field name="fe_tax_code"/>
+                        </group>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_account_tax_group_list" model="ir.actions.act_window">
+            <field name="name">Tax Group</field>
+            <field name="res_model">account.tax.group</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="view_account_tax_group_tree"/>
+            <field name="search_view_id" ref="view_account_tax_group_search"/>
+        </record>
+
+
+    </data>
+</odoo>

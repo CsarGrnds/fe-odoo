@@ -1,0 +1,538 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <template inherit_id="report.internal_layout" id="cr_ebilling_internal_layout">
+             <xpath expr="//span[@t-esc='company.name']" position="attributes">
+                <attribute name="invisible">1</attribute>
+            </xpath>
+        </template>
+
+        <template id="report_document_generic_template_cr">
+            <t t-call="report.html_container">
+                <!--t t-call="report.internal_layout"-->
+                    <t t-set="o" t-value="o.with_context({'lang':o.partner_id.lang})"/>
+                    <div class="page">
+                        <div class="row">
+                            <div class="col-xs-6" style="padding-left: 0px;">
+                                <div align="center">
+                                    <img t-att-src="'data:image/png;base64,%s' % o.company_id.logo" style="height:90px;" />
+                                </div>
+                            </div>
+                            <div class="col-xs-6" style="padding-top:30px;padding-left: -15px;">
+                                <div align="left" style="font-size:20px;">
+                                    <b>COMPROBANTE ELECTRONICO</b>
+                                </div>
+                            </div>
+                        </div>
+                        <br/>
+                        <div class="row" style="border-bottom: 1px solid blue;">
+                            <div class="col-xs-8" style="border-top: 0px;">
+                                <div style="">
+                                    Versión del Documento:
+                                    <t t-esc="o.ebiller_id.version_doc"/>
+                                    <!--<p style="page-break-after:auto"></p>-->
+                                </div>
+                                <div style="">
+                                    Consecutivo:
+                                    <t t-esc="o.invoice_id.ebi_number_doc"/>
+                                    <!--<p style="page-break-after:auto"></p>-->
+                                </div>
+                                <div style="">
+                                    Clave:
+                                    <t t-esc="o.invoice_id.ebi_access_key"/>
+                                    <!--<p style="page-break-after:auto"></p>-->
+                                </div>
+                                <div style="">
+                                    Fecha:
+                                    <t t-esc="get_emission_datetime(o.invoice_id.ebi_send_date)"/>
+                                    <!--<p style="page-break-after:auto"></p>-->
+                                </div>
+                                <div style="">
+                                    Tipo de Documento:
+                                    <t t-esc="doc_type[o.type]"/>
+                                    <!--<p style="page-break-after:auto"></p>-->
+                                    <!--<p style="page-break-after:auto"></p>-->
+                                    <!--<p style="page-break-after:auto"></p>-->
+                                </div>
+                            </div>
+                            <div class="col-xs-4">
+                                <div style="">
+                                    Plazo de crédito:
+                                    <t t-esc="o.invoice_id.payment_term_id.name"/>
+                                    <!--<p style="page-break-after:auto"></p>-->
+                                    <!--<p style="page-break-after:auto"></p>-->
+                                    <!--<p style="page-break-after:auto"></p>-->
+                                </div>
+                                <div style="">
+                                    Condición de Venta:
+                                    <t t-esc="o.invoice_id.invoice_condition_id.name"/>
+                                    <!--<p style="page-break-after:auto"></p>-->
+                                    <!--<p style="page-break-after:auto"></p>-->
+                                    <!--<p style="page-break-after:auto"></p>-->
+                                </div>
+                                <div style="">
+                                    Medio de Pago:
+                                    <t t-esc="o.invoice_id.complete_name_payments"/>
+                                    <!--<p style="page-break-after:auto"></p>-->
+                                    <!--<p style="page-break-after:auto"></p>-->
+                                    <!--<p style="page-break-after:auto"></p>-->
+                                </div>
+                            </div>
+                        </div>
+                        <div t-if="o.type in ['02', '03']"><strong>Información de Referencia</strong></div>
+                        <div t-if="o.type in ['02', '03']" class="row" style="border-top: 1px solid blue;border-bottom: 1px solid blue;">
+                            <div class="col-xs-8" style="border-top: 0px;">
+                                <div style="">
+                                    Tipo de Documento:
+                                    <t t-esc="doc_type[o.invoice_id.ebi_ref_voucher_type]"/>
+                                </div>
+                                <div style="">
+                                    Fecha Emisión:
+                                    <t t-esc="get_emission_datetime(o.invoice_id.ebi_doc_mod_send_date)"/>
+                                </div>
+                                Razón: <t t-esc="o.invoice_id.reason_doc_mod"/>
+                            </div>
+                            <div class="col-xs-4" style="">
+                                <div style="">
+                                    Número:
+                                    <t t-esc="o.invoice_id.num_sequential_doc_mod"/>
+                                </div>
+                                <div style="">
+                                    Código de Ref.:
+                                    <t t-esc="doc_ref_code[o.invoice_id.ebi_ref_voucher_code]"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div><strong>DATOS DEL EMISOR</strong></div>
+                        <div class="row" style="border-top: 1px solid blue;border-bottom: 1px solid blue;">
+                            <div class="col-xs-8" style="border-top: 0px;">
+                                <div style="">
+                                    Nombre:
+                                    <t t-esc="o.invoice_id.company_id.partner_id.name"/>
+                                </div>
+                                <div style="">
+                                    Nombre comercial:
+                                    <t t-esc="o.invoice_id.company_id.comercial_name or ''"/>
+                                </div>
+                                <div style="">
+                                    E-mail:
+                                    <t t-esc="o.invoice_id.company_id.partner_id.email"/>
+                                </div>
+                                <div style="">
+                                    Teléfono:
+                                    <t t-esc="o.invoice_id.company_id.partner_id.phone"/>
+                                </div>
+                                <div style="">
+                                    Provincia:
+                                    <t t-esc="o.invoice_id.company_id.partner_id.state_id.name"/>
+                                </div>
+                                Otras Señas: <t t-esc="o.invoice_id.company_id.partner_id.otras_senas"/>
+                            </div>
+                            <div class="col-xs-4" style="">
+                                <div style="">
+                                    Cédula:
+                                    <t t-esc="o.invoice_id.company_id.partner_id.identification_cr"/>
+                                </div>
+                                <div style="">
+                                </div>
+                                <div style="">
+                                </div>
+                                <div style="">
+                                    Fax:
+                                    <t t-esc="o.invoice_id.company_id.partner_id.fax"/>
+                                </div>
+                                <div style="">
+                                    Cantón:
+                                    <t t-esc="o.invoice_id.company_id.partner_id.city_id.name"/>
+                                </div>
+                                <div style="">
+                                    Distrito:
+                                    <t t-esc="o.invoice_id.company_id.partner_id.district_id.name"/>
+                                </div>
+                                <div style="">
+                                    Barrio:
+                                    <t t-esc="o.invoice_id.company_id.partner_id.neighborhood_id.name"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div><strong>DATOS DEL CLIENTE</strong></div>
+                        <div class="row" style="border-top: 1px solid blue;">
+                            <div class="col-xs-8" style="border-top: 0px;">
+                                <div style="">
+                                    Nombre:
+                                    <t t-esc="o.invoice_id.partner_id.name"/>
+                                </div>
+                                <div style="">
+                                    Nombre comercial:
+                                    <t t-esc="o.invoice_id.comercial_name or ''"/>
+                                </div>
+                                <div style="">
+                                    E-mail:
+                                    <t t-esc="o.invoice_id.partner_id.email"/>
+                                </div>
+                                <div style="">
+                                    Teléfono:
+                                    <t t-esc="o.invoice_id.partner_id.phone"/>
+                                </div>
+                                <div style="">
+                                    Provincia:
+                                    <t t-esc="o.invoice_id.partner_id.state_id.name"/>
+                                </div>
+                                Otras Señas: <t t-esc="o.invoice_id.partner_id.otras_senas"/>
+                            </div>
+                            <div class="col-xs-4" style="">
+                                <div style="">
+                                    Cédula:
+                                    <t t-esc="o.invoice_id.identification_cr"/>
+                                </div>
+                                <div style="">
+                                    <p style="page-break-after:auto"></p>
+                                </div>
+                                <div style="">
+                                    <p style="page-break-after:auto"></p>
+                                </div>
+                                <div style="">
+                                    Fax:
+                                    <t t-esc="o.invoice_id.partner_id.fax"/>
+                                </div>
+                                <div style="">
+                                    Cantón:
+                                    <t t-esc="o.invoice_id.partner_id.city_id.name"/>
+                                </div>
+                                 <div style="">
+                                    Distrito:
+                                    <t t-esc="o.invoice_id.partner_id.district_id.name"/>
+                                </div>
+                                <div style="">
+                                    Barrio:
+                                    <t t-esc="o.invoice_id.partner_id.neighborhood_id.name"/>
+                                </div>
+                            </div>
+                        </div>
+                        <br/>
+                        <div>
+                            <div class="col-xs-12">
+                                <table class="table table-bordered" border="1" style="border: 1px solid black;">
+                                    <tr>
+                                        <th align="center">
+                                            <b>Línea</b>
+                                        </th>
+                                        <th align="center">
+                                            <b>Código</b>
+                                        </th>
+                                        <th align="center" style="width: 45%">
+                                            <b>Descripción</b>
+                                        </th>
+                                        <th align="center">
+                                            <b>Cant.</b>
+                                        </th>
+                                        <th align="center" style="width: 45%">
+                                            <b>Unidad</b>
+                                        </th>
+                                        <th align="center">
+                                            <b>Precio Unitario</b>
+                                        </th>
+                                        <th align="center">
+                                            <b>Monto</b>
+                                        </th>
+                                        <th align="center">
+                                            <b>Naturaleza Descuento</b>
+                                        </th>
+                                        <th align="center">
+                                            <b>Descuento</b>
+                                        </th>
+                                        <th align="center" colspan="3">
+                                            <b>Total</b>
+                                        </th>
+                                    </tr>
+                                    <t t-foreach="get_lines(o)" t-as="line">
+                                        <tr>
+                                            <td style="padding-bottom: 0px;padding-top: 0px;" align="center">
+                                                <span t-esc="ustr(line['number'])"/>
+                                            </td>
+                                            <td style="padding-bottom: 0px;padding-top: 0px;" align="center">
+                                                <span t-esc="ustr(line['code'])"/>
+                                            </td>
+                                            <td style="padding-bottom: 0px;padding-top: 0px;">
+                                                <span t-esc="ustr(line['name'])"/>
+                                            </td>
+                                            <td align="right" style="padding-bottom: 0px;padding-top: 0px;">
+                                                <span t-esc="'%.2f'% (line['quantity'])"/>
+                                            </td>
+                                            <td align="right" style="padding-bottom: 0px;padding-top: 0px;">
+                                                <span t-esc="ustr(line['uom'])"/>
+                                            </td>
+                                            <td align="right" style="padding-bottom: 0px;padding-top: 0px;">
+                                                <span t-esc="'%.2f'%(line['price_unit'])"/>
+                                            </td>
+                                            <td align="right" style="padding-bottom: 0px;padding-top: 0px;">
+                                                <span t-esc="'%.2f'%(line['price_without_taxes'])"/>
+                                            </td>
+                                            <td align="right" style="padding-bottom: 0px;padding-top: 0px;">
+                                                <span t-esc="line.get('discount_nature')"/>
+                                            </td>
+                                            <td align="right" style="padding-bottom: 0px;padding-top: 0px;">
+                                                <span t-esc="'%.2f'%(line.get('discount'))"/>
+                                            </td>
+                                            <td align="right" style="padding-bottom: 0px;padding-top: 0px;">
+                                                <span t-esc="'%.2f'%(line.get('total'))"/>
+                                            </td>
+                                        </tr>
+                                    </t>
+                                </table>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="col-xs-7">
+                                <div class="panel panel-default" style="height:230px;">
+                                    <div align="center">
+                                        <b>Observaciones (Otros)</b>
+                                    </div>
+                                    <t t-foreach="get_aditional_info(o)" t-as="add_l">
+                                        <div style="margin-left: 15px;">
+                                            <t t-esc="ustr(add_l['value'])"/>
+                                        </div>
+                                    </t>
+                                </div>
+                            </div>
+                            <div class="col-xs-5 pull-right">
+                                <table class="table table-bordered">
+                                    <tr>
+                                        <td style="padding-bottom: 0px;padding-top: 0px;">
+                                            <span><b>Subtotal</b></span>
+                                        </td>
+                                        <td align="right" style="padding-bottom: 0px;padding-top: 0px;">
+                                            <span t-esc="'%.2f'% (o.invoice_id.amount_untaxed)"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding-bottom: 0px;padding-top: 0px;">
+                                            <span><b>Total servicios gravados</b></span>
+                                        </td>
+                                        <td align="right" style="padding-bottom: 0px;padding-top: 0px;">
+                                            <span t-esc="'%.2f'% (o.invoice_id.total_serv_grav)"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding-bottom: 0px;padding-top: 0px;">
+                                            <span><b>Total servicios exentos</b></span>
+                                        </td>
+                                        <td align="right" style="padding-bottom: 0px;padding-top: 0px;">
+                                            <span t-esc="'%.2f'%  (o.invoice_id.total_serv_exentos)"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding-bottom: 0px;padding-top: 0px;">
+                                            <span><b>Total mercancías gravadas</b></span>
+                                        </td>
+                                        <td align="right" style="padding-bottom: 0px;padding-top: 0px;">
+                                            <span t-esc="'%.2f'% (o.invoice_id.total_merc_grav)"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding-bottom: 0px;padding-top: 0px;">
+                                            <span><b>Total mercancías exentas</b></span>
+                                        </td>
+                                        <td align="right" style="padding-bottom: 0px;padding-top: 0px;">
+                                            <span t-esc="'%.2f'% (o.invoice_id.total_merc_exentas)"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding-bottom: 0px;padding-top: 0px;">
+                                            <span><b>Total gravado</b></span>
+                                        </td>
+                                        <td align="right" style="padding-bottom: 0px;padding-top: 0px;">
+                                            <span t-esc="'%.2f'% (o.invoice_id.total_gravado)"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding-bottom: 0px;padding-top: 0px;">
+                                            <span><b>Total exento</b></span>
+                                        </td>
+                                        <td align="right" style="padding-bottom: 0px;padding-top: 0px;">
+                                            <span t-esc="'%.2f'% (o.invoice_id.total_exento)"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding-bottom: 0px;padding-top: 0px;">
+                                            <span><b>Total venta</b></span>
+                                        </td>
+                                        <td align="right" style="padding-bottom: 0px;padding-top: 0px;">
+                                            <span t-esc="'%.2f'% (o.invoice_id.total_venta)"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding-bottom: 0px;padding-top: 0px;">
+                                            <span><b>Total descuento</b></span>
+                                        </td>
+                                        <td align="right" style="padding-bottom: 0px;padding-top: 0px;">
+                                            <span t-esc="'%.2f'% (o.invoice_id.total_descuento)"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding-bottom: 0px;padding-top: 0px;">
+                                            <span><b>Total venta neta</b></span>
+                                        </td>
+                                        <td align="right" style="padding-bottom: 0px;padding-top: 0px;">
+                                            <span t-esc="'%.2f'% (o.invoice_id.total_venta_net)"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding-bottom: 0px;padding-top: 0px;">
+                                            <span><b>Total impuestos</b></span>
+                                        </td>
+                                        <td align="right" style="padding-bottom: 0px;padding-top: 0px;">
+                                            <span t-esc="'%.2f'% (o.invoice_id.total_impuesto)"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding-bottom: 0px;padding-top: 0px;">
+                                            <span><b>Total comprobante</b></span>
+                                        </td>
+                                        <td align="right" style="padding-bottom: 0px;padding-top: 0px;">
+                                            <span t-esc="'%.2f'% (o.invoice_id.total_comprobante)"/>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="pull-right">
+                            <div class="col-xs-30">
+                                <div class="" style="font-size:10px;">
+                                    <span>Código Moneda..........<t t-esc="o.invoice_id.currency_fe_code or ''"/></span><br/>
+                                    <span>Tipo de Cambio.........<t t-esc="'%.4f'% (o.invoice_id.currency_fe_rate)"/></span>
+                                </div>
+                            </div>
+                            <div class="col-xs-30">
+                                <div class="" style="font-size:10px;">
+                                </div>
+                            </div>
+                            <div class="col-xs-1 text-right pull-right">
+                                <div class="mb16 ml4">
+                                    <img t-att-src="'/report/barcode/?type=%s&amp;value=%s&amp;width=%s&amp;height=%s&amp;humanreadable=1' % ('QR', o.invoice_id.ebi_access_key, 250, 250)"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <!--/t-->
+                <div class="footer">
+                    <div class="row">
+                        <div class="text-center">
+                            Autorizado Mediante Resolución No<span t-esc="o.ebiller_id.current_regulation_rs_number"/> con Fecha <span t-esc="o.ebiller_id.current_regulation_rs_date_text"/>
+                        </div>
+                    </div>
+                </div>
+            </t>
+        </template>
+
+        <template id="report_document_generic_mh">
+            <t t-call="report.html_container">
+                <t t-foreach="docs" t-as="o">
+                    <t t-call="medical_ebilling_cr.report_document_generic_template_cr" t-lang="o.partner_id.lang"/>
+                </t>
+            </t>
+        </template>
+
+        <report id="action_report_document_generic_fe_cr" model="electronic.document.generic.cr"
+                string="Comprobante" report_type="qweb-pdf"
+                name="medical_ebilling_cr.report_document_generic_mh"
+                file="medical_ebilling_cr.report_document_generic_mh"
+        />
+
+        <record id="invoice_voucher_paperformat_cr" model="report.paperformat">
+            <field name="name">Invoice FE CR Voucher Paper Format</field>
+            <field name="default" eval="False" />
+            <field name="format">custom</field>
+            <field name="page_height">0</field>
+            <field name="page_width">0</field>
+            <field name="orientation">Portrait</field>
+            <field name="margin_top">10</field>
+            <field name="margin_bottom">10</field>
+            <field name="margin_left">8</field>
+            <field name="margin_right">8</field>
+            <field name="header_line" eval="False" />
+            <field name="header_spacing">10</field>
+            <field name="dpi">90</field>
+        </record>
+
+        <record id="action_report_document_generic_fe_cr" model="ir.actions.report.xml">
+            <field name="paperformat_id" ref="medical_ebilling_cr.invoice_voucher_paperformat_cr"/>
+        </record>
+
+
+        <record id="email_template_document_generic_cr" model="mail.template">
+            <field name="name">Hacienda Comprobante Electronico CR - Send by Email</field>
+            <field name="email_from">${object.company_id.email or 'noreply@localhost'|safe}</field>
+            <field name="email_to">${object.partner_id.email|safe}</field>
+            <field name="model_id" ref="medical_ebilling_cr.model_electronic_document_generic_cr"/>
+            <field name="auto_delete" eval="False"/>
+            <field name="report_template" ref="action_report_document_generic_fe_cr"/>
+            <field name="report_name">${(object.mh_access_key or '').replace('/','_')}</field>
+            <field name="lang">${object.partner_id.lang}</field>
+            <field name="subject">Documento Electrónico - ${object.document_type_name} Número ${object.mh_complete_number or 'n/a'}
+            </field>
+            <field name="body_html"><![CDATA[
+<p>Estimado(a),</p>
+<p>${object.customer_name}.</p>
+<p><b>${object.company_name}</b> le informa que se ha generado su comprobante electrónico, ${object.document_type_name} No. ${object.mh_complete_number or 'n/a'} que adjuntamos en formato XML y PDF.</p>
+<p>Atentamente,</p>
+<div class="col-md-12 mb16">
+ <a href="/">
+   <img src="/logo" alt="${object.company_id.name}" style="vertical-align:baseline;max-width:100px;" />
+</a>
+
+</div>
+    <br/>
+    <br/>
+     <table style="width:600px;margin:0px auto;text-align:center;">
+        <tbody>
+            <tr>
+                <td style="padding-top:10px;font-size: 12px;">
+                    <div>Este correo electrónico fue enviado por <a href="mailto:${object.invoice_id.company_id.email}" style="text-decoration:none;color:#875A7B;">${object.invoice_id.company_id.email}</a></div>
+                    <p style="margin:0px 0px 9px 0px;padding-top:10px;">Copyright © <a href="${object.company_id.website}">${object.company_id.name}</a></p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+            ]]></field>
+        </record>
+
+        <record id="email_template_accept_rechazo_cr" model="mail.template">
+            <field name="name">Hacienda Mensaje Aceptacion/Rechazo CR - Send by Email</field>
+            <field name="email_from">${object.company_id.email or 'noreply@localhost'|safe}</field>
+            <field name="email_to">${object.partner_id.email|safe}</field>
+            <field name="model_id" ref="medical_ebilling_cr.model_electronic_document_generic_cr"/>
+            <field name="auto_delete" eval="False"/>
+            <field name="report_name">${(object.mh_access_key or '').replace('/','_')}</field>
+            <field name="lang">${object.partner_id.lang}</field>
+            <field name="subject">Mensaje - ${object.document_type_name} Número ${object.mh_complete_number or 'n/a'}
+            </field>
+            <field name="body_html"><![CDATA[
+<p>Estimado(a),</p>
+<p>${object.customer_name}.</p>
+<p><b>${object.company_name}</b> le informa que se ha generado su mensaje, ${object.document_type_name} No. ${object.mh_complete_number or 'n/a'} que adjuntamos en formato XML.</p>
+<p>Atentamente,</p>
+<div class="col-md-12 mb16">
+ <a href="/">
+   <img src="/logo" alt="${object.company_id.name}" style="vertical-align:baseline;max-width:100px;" />
+</a>
+
+</div>
+    <br/>
+    <br/>
+     <table style="width:600px;margin:0px auto;text-align:center;">
+        <tbody>
+            <tr>
+                <td style="padding-top:10px;font-size: 12px;">
+                    <div>Este correo electrónico fue enviado por <a href="mailto:${object.invoice_id.company_id.email}" style="text-decoration:none;color:#875A7B;">${object.invoice_id.company_id.email}</a></div>
+                    <p style="margin:0px 0px 9px 0px;padding-top:10px;">Copyright © <a href="${object.company_id.website}">${object.company_id.name}</a></p>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+            ]]></field>
+        </record>
+
+    </data>
+</odoo>

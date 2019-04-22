@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+
+        <record model="ir.ui.view" id="cr_view_account_invoice_filter">
+            <field name="name">cr.account.invoice.search</field>
+            <field name="model">account.invoice</field>
+            <field name="inherit_id" ref="account.view_account_invoice_filter"/>
+            <field name="arch" type="xml">
+                 <field name="number" position="after">
+                     <field name="num_sequential" />
+                 </field>
+                <filter name="refunds" position="after">
+                     <filter name="debit_note" string="Notas de Debito" domain="['&amp;', ('state','in',['open','paid']),('ebi_voucher_type','=', '02')]"/>
+                </filter>
+                <filter name="refunds" position="attributes">
+                    <attribute name="string">Notas de Credito</attribute>
+                </filter>
+
+                <filter name="invoices" position="attributes">
+                    <attribute name="domain">['&amp;', ('state','in',['open','paid']),('type','in',('out_invoice','in_invoice')),('ebi_voucher_type','=', '01')]</attribute>
+                </filter>
+                <filter name="refunds" position="after">
+                     <filter name="ticket_elect" string="Tiquete" domain="['&amp;', ('state','in',['open','paid']),('ebi_voucher_type','=', '04')]"/>
+                </filter>
+
+                <filter name="group_by_partner_id" position="after">
+                     <filter name="group_by_comprobante" string="Comprobante" context="{'group_by':'ebi_voucher_type'}"/>
+                     <!--<filter name="group_by_type" string="Type" context="{'group_by':'type'}"/>-->
+                 </filter>
+
+                <field name="number" position="after">
+                     <newline/>
+                    <group string="Filtros Facturación Eletrónica">
+                        <filter string="No enviado" domain="[('ebi_state','=','draft')]"/>
+                        <filter string="Enviado" domain="[('ebi_state','=','send')]"/>
+                        <filter string="Autorizado" domain="[('ebi_state','=','auth')]"/>
+                        <filter string="No autorizado" domain="[('ebi_state','=','noauth')]"/>
+                        <!--<filter string="Anulado" domain="[('ebi_state','=','cancel')]"/>-->
+                    </group>
+                 </field>
+
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="cr_invoice_tree">
+            <field name="name">cr.account.invoice.tree</field>
+            <field name="model">account.invoice</field>
+            <field name="inherit_id" ref="account.invoice_tree"/>
+            <field name="arch" type="xml">
+                 <field name="number" position="after">
+                     <field name="ebi_voucher_type"/>
+                     <field name="num_sequential"/>
+                 </field>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="cr_supplier_invoice_tree">
+            <field name="name">cr.account.invoice.supplier.tree</field>
+            <field name="model">account.invoice</field>
+            <field name="inherit_id" ref="account.invoice_supplier_tree"/>
+            <field name="arch" type="xml">
+                 <field name="reference" position="after">
+                     <field name="supplier_reference"/>
+                 </field>
+                <xpath expr="//field[@name='reference']" position="attributes">
+					<attribute name="invisible">1</attribute>
+				</xpath>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="view_account_invoice_form_facturae">
+			<field name="name">view_account_invoice_form_facturae</field>
+			<field name="model">account.invoice</field>
+			<field name="inherit_id" ref="account.invoice_form" />
+			<field name="arch" type="xml">
+                <xpath expr="//button[@name='action_invoice_sent']" position="before" >
+                    <button class="oe_highlight" icon="fa-check" name="btn_ebi_all_operations" type="object" string="Procesar Comprobante" attrs="{'invisible': ['|',('ebi_state', '!=', 'to_check'),('state', 'not in', ['open', 'paid'])]}"/>
+                </xpath>
+                <xpath expr="//button[@name='invoice_print']" position="replace">
+                    <button name="invoice_print" type="object" string="Imprimir" attrs="{'invisible':['|', '|' ,('sent','=',True), ('state', '!=', 'open'), ('edig_id', '!=', False)]}" class="oe_highlight" groups="base.group_user"/>
+                </xpath>
+                <xpath expr="//button[@name='invoice_print']" position="after">
+                    <button name="invoice_print_fe" string="Imprimir Comprobante" type="object" attrs="{'invisible':['|', '|', ('sent','=',True), ('state', '!=', 'open'), ('edig_id', '=', False)]}" class="oe_highlight" groups="base.group_user"/>
+                    <button type="object" name="btn_ebi_send_mail" string="Enviar por Correo el Comprobante" attrs="{'invisible': [('ebi_state', '!=', 'auth')]}" class="oe_highlight" style="display: inline-block; float: left;margin: 0 2px;" icon="fa-envelope"/>
+                </xpath>
+                <xpath expr="//button[@name='action_invoice_sent']" position="replace" >
+                    <button name="action_invoice_sent" type="object" string="Enviar por Correo" attrs="{'invisible':['|', '|' ,('sent','=',True), ('state', '!=', 'open'), ('edig_id', '!=', False)]}" class="oe_highlight" groups="base.group_user"/>
+                </xpath>
+                <xpath expr="//field[@name='date_invoice']" position="attributes">
+                    <attribute name="required">1</attribute>
+                </xpath>
+                <xpath expr="//field[@name='invoice_line_ids']/tree/field[@name='discount']" position="attributes">
+                    <attribute name="groups"></attribute>
+                </xpath>
+
+                <xpath expr="//field[@name='invoice_line_ids']/tree/field[@name='discount']" position="after">
+                    <field name="nature_discount_id" options="{'no_create': True}"/>
+                </xpath>
+
+                <xpath expr="//field[@name='invoice_line_ids']/tree/field[@name='price_subtotal']" position="after">
+                    <field name="naturaleza_descuento" invisible="1"/>
+                    <field name="cr_amount_total_line" invisible="1"/>
+                </xpath>
+
+                <xpath expr="//field[@name='tax_line_ids']/tree/field[@name='amount']" position="before">
+					<field name="base"/>
+				</xpath>
+
+                <xpath expr="//field[@name='move_id']" position="after">
+                    <field name="sent_to_center" invisible="1"/>
+                    <field name="refund_invoice_id" invisible="1" domain="[('company_id','=', company_id)]"/>
+                    <!--<field name="ebi_doc_mod_send_date" invisible="1"/>-->
+                </xpath>
+
+				<field name="partner_id" position="after">
+                    <field name="comercial_name" required="1" attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                    <field name="identification_cr" required="1" attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                </field>
+
+				<field name="payment_term_id" position="before">
+                    <field name="branch_office_id" options="{'no_create': True}" attrs="{'readonly': [('state', '!=', 'draft')]}" invisible="1"/>
+                    <field name="ebi_voucher_type" attrs="{'readonly': [('state', '!=', 'draft')]}" required="1"/>
+                    <field name="debit_note_invoice_id" context="{'invoice_mod_ref': True}"
+                           domain="[('company_id','=', company_id),('ebi_voucher_type','!=','02'), ('type','=','out_invoice'), ('partner_id','=',partner_id),('state','not in', ['draft', 'cancel']),('ebi_state','in', ['auth'])]"
+                           options="{'no_create': True}"
+                           attrs="{'invisible':[('ebi_voucher_type','!=','02')], 'required':[('ebi_voucher_type','=','02')], 'readonly': [('state', '!=', 'draft')]}"/>
+                    <field name="ebi_doc_mod_send_date" attrs="{'invisible': [('ebi_voucher_type', 'not in', ['02', '03'])],'required': [('ebi_voucher_type', 'in', ['02', '03'])],}"/>
+                    <field name="date_doc_mod" invisible="1"/>
+                    <field name="num_sequential_doc_mod" send="1" attrs="{'invisible': [('ebi_voucher_type', 'not in', ['02', '03'])], 'required': [('ebi_voucher_type', 'in', ['02', '03'])], 'readonly': [('state', '!=', 'draft')]}"/>
+                    <field name="reason_doc_mod" attrs="{'invisible': [('ebi_voucher_type', 'not in', ['02', '03'])], 'required': [('ebi_voucher_type', 'in', ['02', '03'])], 'readonly': [('state', '!=', 'draft')]}"/>
+                </field>
+
+				<field name="user_id" position="before">
+                    <field name="identification_type" required="1" attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                    <field name="emision_point_id" options="{'no_edit': True, 'no_create': True}" attrs="{'readonly': [('state', '!=', 'draft')]}" domain="[('company_id','=', company_id)]" required="1"/>
+                    <field name="num_sequential" attrs="{'readonly': [('state', '!=', 'draft')]}" readonly="1"/>
+                    <field name="ebi_voucher_situation" attrs="{'readonly': [('state', '!=', 'draft')]}" required="1"/>
+                    <field name="ebi_ref_voucher_type" attrs="{'invisible': [('ebi_voucher_type', 'not in', ['02', '03'])], 'required': [('ebi_voucher_type', 'in', ['02', '03'])],'readonly': [('state', '!=', 'draft')]}"/>
+                    <field name="ebi_ref_voucher_code" attrs="{'invisible': [('ebi_voucher_type', 'not in', ['02', '03'])], 'required': [('ebi_voucher_type', 'in', ['02', '03'])], 'readonly': [('state', '!=', 'draft')]}"/>
+                </field>
+
+                <field name="payment_term_id" position="before">
+                    <field name="invoice_condition_id" attrs="{'readonly': [('state', '!=', 'draft')]}" options="{'no_edit': True, 'no_create': True}" required="1"/>
+                    <field name="invoice_condition_other_name" attrs="{'readonly': [('state', '!=', 'draft')], 'required': [('invoice_condition_code', 'in', ['99'])], 'invisible': [('invoice_condition_code', 'not in', ['99'])]}" />
+                    <field name="invoice_condition_other_code" attrs="{'readonly': [('state', '!=', 'draft')], 'required': [('invoice_condition_code', 'in', ['99'])], 'invisible': [('invoice_condition_code', 'not in', ['99'])]}" />
+                </field>
+
+                <field name="user_id" position="before">
+                    <field name="payment_method_ids" domain="[('type', 'in', ('bank', 'cash')),('company_id','=', company_id)]" required="1" attrs="{'readonly': False}" widget="many2many_tags" options="{'no_create': True}"/>
+                </field>
+
+                <field name="team_id" position="after">
+                    <field name="invoice_condition_code" invisible="1" attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                    <field name="plazo_cred" invisible="1" attrs="{'invisible': [('invoice_condition_code', 'not in', ['02'])], 'readonly': [('state', '!=', 'draft')], 'required': [('invoice_condition_code', 'in', ['02'])]}" />
+                </field>
+
+                <xpath expr="//field[@name='payment_term_id']" position="attributes">
+                    <attribute name="attrs">{'required': [('invoice_condition_code', 'in', ['02'])]}</attribute>
+                </xpath>
+				<notebook position="inside">
+                    <page string="Tax Details">
+                        <group col="4" colspan="4" string="Calculation of Taxes (Informative)">
+							<group string="Totales Gravados">
+								<field name="total_serv_grav"/>
+                                <field name="total_merc_grav"/>
+                                <field name="total_gravado"/>
+							</group>
+							<group string="Totales Excentos">
+                                <field name="total_serv_exentos"/>
+                                <field name="total_merc_exentas"/>
+                                <field name="total_exento"/>
+							</group>
+						</group>
+
+                        <group  col="4" string="Totales Generales">
+                            <field name="total_venta"/>
+                            <field name="total_descuento"/>
+                            <field name="total_venta_net"/>
+                            <field name="total_impuesto"/>
+                            <field name="total_comprobante"/>
+                        </group>
+
+					</page>
+                    <page string="Facturación Electrónica" attrs="{'invisible': [('state', 'not in', ['open', 'paid', 'cancel'])]}">
+                        <header colspan="4">
+                            <button type="object" name="btn_ebi_check" string="Comprobar" class="oe_highlight" attrs="{'invisible': [('ebi_state', '!=', 'to_check')]}" style="display: inline-block; float: left;margin: 0 2px;" icon="fa-check"/>
+                            <button type="object" name="btn_ebi_send" string="Enviar" class="oe_highlight" attrs="{'invisible': [('ebi_state', 'not in', ['draft'])]}" style="display: inline-block; float: left; margin: 0 2px;" icon="fa-share-square"/>
+                            <!--<button type="object" name="btn_ebi_re_send" string="ReEnviar" class="oe_highlight" attrs="{'invisible': [('ebi_state', 'not in', ['send'])]}" style="display: inline-block; float: left; margin: 0 2px;" icon="fa-share-square"/>-->
+                            <button type="object" name="btn_ebi_draft" string="Borrador" style="display: inline-block; float: left;margin: 0 2px;" attrs="{'invisible': [('ebi_state', 'not in', ['draft', 'send'])]}" confirm="¿Esta totalmente seguro que desea volver a borrador este documento? Tome en cuenta que todo lo que haya enviado anteriormente será eliminado." icon="fa-pencil-square-o"/>
+                            <!--<button type="object" name="btn_ebi_cancel" string="Anular" attrs="{'invisible': [('ebi_state', '!=', 'auth')]}" style="display: inline-block; float: left;margin: 0 2px;" icon="fa-close"/>-->
+                            <button type="object" name="btn_ebi_send_mail" string="Enviar por Correo" attrs="{'invisible': [('ebi_state', '!=', 'auth')]}" class="oe_highlight" style="display: inline-block; float: left;margin: 0 2px;" icon="fa-envelope"/>
+                            <field name="ebi_state" widget="statusbar" statusbar_visible="draft,send,auth" style="display: inline-block; float: right;"/>
+                        </header>
+                        <group col="4" colspan="4">
+                            <group string="Información">
+                                <field name="ebi_last_check_date"/>
+                                <field name="ebi_send_date"/>
+                                <field name="ebi_auth_date"/>
+                            </group>
+                            <group string="Identificadores del Documento">
+                                <field name="ebi_environment"/>
+                                <field name="ebi_access_key"/>
+                                <field name="edig_id" attrs="{'readonly': [('state', '!=', 'draft')]}" options="{'no_create': True}" domain="[('company_id','=', company_id)]"/>
+                                <field name="ebi_auth_key" invisible="1"/>
+                            </group>
+                        </group>
+                        <notebook>
+                            <page string="Observaciones(Otros)">
+                                <field name="additional_info_ids" attrs="{'readonly': [('ebi_state', '!=', 'to_check')]}" nolabel="1"
+                                       context="{'default_model_name': 'account.invoice', 'default_res_id': active_id}">
+                                    <tree editable="top">
+                                        <field name="field_name" invisible="1"/>
+                                        <field name="field_value" string="OtroTexto"/>
+                                        <field name="model_name" invisible="1"/>
+                                        <field name="res_id" invisible="1"/>
+                                    </tree>
+                                </field>
+                            </page>
+                            <page string="Comunicación">
+                                <field name="ebi_messages_ids" nolabel="1" readonly="1">
+                                    <tree colors="navy:type=='message';royalblue:type=='interno';darkred:type=='error';green:type=='sri';">
+                                        <field name="sequence"/>
+                                        <field name="title"/>
+                                        <field name="message"/>
+                                        <field name="create_date"/>
+                                        <field name="state"/>
+                                        <field name="type" invisible="1"/>
+                                    </tree>
+                                    <form>
+                                        <group col="4">
+                                            <field name="title"/>
+                                            <field name="message"/>
+                                            <field name="access_key" colspan="4"/>
+                                        </group>
+                                        <separator string="Información adicional"/>
+                                        <field name="extended_message"/>
+                                    </form>
+                                </field>
+                            </page>
+                            <page string="FE XML">
+                                <field name="xml_file"/>
+                            </page>
+                        </notebook>
+                    </page>
+                </notebook>
+
+
+                <xpath expr="//field[@name='message_follower_ids']" position="attributes">
+                    <attribute name="invisible">1</attribute>
+                </xpath>
+                <xpath expr="//field[@name='message_ids']" position="attributes">
+                    <attribute name="invisible">0</attribute>
+                </xpath>
+			</field>
+		</record>
+
+        <record model="ir.ui.view" id="invoice_supplier_form_facturae_cr">
+            <field name="name">cr.supplier.account.invoice.form</field>
+            <field name="model">account.invoice</field>
+            <field name="inherit_id" ref="account.invoice_supplier_form"/>
+            <field name="arch" type="xml">
+                <xpath expr="//button[@name='invoice_open']" position="before">
+                    <button class="oe_highlight" icon="fa-check" name="btn_ebi_all_operations" type="object" string="Aceptar/Rechazo" attrs="{'invisible': ['|','|',('has_electronic_emission', '=', False),('ebi_state', '!=', 'to_check'),('state', 'not in', ['open', 'paid'])]}"/>
+                    <button type="object" name="btn_ebi_send_mail" string="Enviar por Correo" attrs="{'invisible': [('ebi_state', '!=', 'auth')]}" class="oe_highlight" style="display: inline-block; float: left;margin: 0 2px;" icon="fa-envelope"/>
+                </xpath>
+
+                <xpath expr="//field[@name='reference']" position="attributes">
+					<attribute name="string">Nro de Factura</attribute>
+					<attribute name="invisible">1</attribute>
+				</xpath>
+
+                <xpath expr="//field[@name='reference']" position="before">
+					<field name="supplier_reference" required="0"
+                           attrs="{'readonly': [('state', '!=', 'draft')], 'required': [('has_electronic_emission', '=', True)]}"/>
+					<field name="ebi_voucher_type"
+                           attrs="{'readonly': [('state', '!=', 'draft')], 'invisible': [('has_electronic_emission', '=', False)], 'required': [('has_electronic_emission', '=', True)]}" required="0"/>
+				</xpath>
+
+                <xpath expr="//field[@name='reference']" position="after">
+
+                    <field name="ebi_confirmation_type" required="0" attrs="{'readonly': [('state', '!=', 'draft')], 'invisible': [('has_electronic_emission', '=', False)], 'required': [('has_electronic_emission', '=', True)]}"/>
+                </xpath>
+
+                <xpath expr="//field[@name='date_invoice']" position="attributes">
+                    <attribute name="required">1</attribute>
+                </xpath>
+
+
+                <xpath expr="//field[@name='invoice_line_ids']/tree/field[@name='discount']" position="attributes">
+                    <attribute name="groups"></attribute>
+                </xpath>
+
+                <xpath expr="//field[@name='invoice_line_ids']/tree/field[@name='discount']" position="after">
+                    <field name="nature_discount_id" options="{'no_create': True}"/>
+                </xpath>
+
+                <xpath expr="//field[@name='invoice_line_ids']/tree/field[@name='price_subtotal']" position="after">
+                    <field name="naturaleza_descuento" invisible="1"/>
+                    <field name="cr_amount_total_line" invisible="1"/>
+                </xpath>
+
+                <xpath expr="//field[@name='tax_line_ids']/tree/field[@name='amount']" position="before">
+					<field name="base"/>
+				</xpath>
+
+                <field name="partner_id" position="after">
+                    <field name="has_electronic_emission" attrs="{'readonly': [('state', '!=', 'draft')]}"/>
+                    <field name="comercial_name" required="0"
+                           attrs="{'readonly': [('state', '!=', 'draft')], 'invisible': [('has_electronic_emission', '=', False)], 'required': [('has_electronic_emission', '=', True)]}"/>
+                </field>
+
+                <field name="date_due" position="after">
+                    <field name="identification_type" required="0"
+                           attrs="{'readonly': [('state', '!=', 'draft')],'invisible': [('has_electronic_emission', '=', False)], 'required': [('has_electronic_emission', '=', True)]}"/>
+                    <field name="identification_cr" required="0"
+                           attrs="{'readonly': [('state', '!=', 'draft')],'invisible': [('has_electronic_emission', '=', False)], 'required': [('has_electronic_emission', '=', True)]}"/>
+                    <field name="emision_point_id" options="{'no_edit': True, 'no_create': True}"
+                           attrs="{'readonly': [('state', '!=', 'draft')], 'required': [('has_electronic_emission', '=', True)]}" domain="[('company_id','=', company_id)]" required="0"/>
+                    <field name="num_sequential"
+                           attrs="{'readonly': [('state', '!=', 'draft')], 'invisible': [('has_electronic_emission', '=', False)]}" readonly="1"/>
+                    <field name="ebi_confirmation_message"
+                           attrs="{'readonly': [('state', '!=', 'draft')],'invisible': [('has_electronic_emission', '=', False)], 'required': [('has_electronic_emission', '=', True)]}" required="0"/>
+                    <!--<field name="ebi_voucher_situation" attrs="{'readonly': [('state', '!=', 'draft')]}" required="1"/>-->
+                </field>
+
+                <field name="payment_term_id" position="before">
+                    <field name="branch_office_id" options="{'no_create': True}" attrs="{'readonly': [('state', '!=', 'draft')]}" invisible="1"/>
+                </field>
+
+                <xpath expr="//notebook" position="before">
+                    <group>
+                        <field name="supplier_ebi_access_key" required="0" attrs="{'readonly': [('state', '!=', 'draft')], 'invisible': [('has_electronic_emission', '=', False)], 'required': [('has_electronic_emission', '=', True)]}"/>
+                    </group>
+                </xpath>
+
+                <notebook position="inside">
+                    <page string="Detalle de Impuestos">
+                        <group col="4" colspan="4" string="Calculation of Taxes (Informative)">
+							<group string="Totales Gravados">
+								<field name="total_serv_grav"/>
+                                <field name="total_merc_grav"/>
+                                <field name="total_gravado"/>
+							</group>
+							<group string="Totales Excentos">
+                                <field name="total_serv_exentos"/>
+                                <field name="total_merc_exentas"/>
+                                <field name="total_exento"/>
+							</group>
+						</group>
+
+                        <group  col="4" string="Totales Generales">
+                            <field name="total_venta"/>
+                            <field name="total_descuento"/>
+                            <field name="total_venta_net"/>
+                            <field name="total_impuesto"/>
+                            <field name="total_comprobante"/>
+                        </group>
+
+					</page>
+                    <page string="Facturación Electrónica" attrs="{'invisible': ['|', ('has_electronic_emission', '=', False), ('state', 'not in', ['open', 'paid', 'cancel'])]}">
+                        <header colspan="4">
+                            <button type="object" name="btn_ebi_check" string="Comprobar" class="oe_highlight" attrs="{'invisible': [('ebi_state', '!=', 'to_check')]}" style="display: inline-block; float: left;margin: 0 2px;" icon="fa-check"/>
+                            <button type="object" name="btn_ebi_send" string="Enviar" class="oe_highlight" attrs="{'invisible': [('ebi_state', 'not in', ['draft'])]}" style="display: inline-block; float: left; margin: 0 2px;" icon="fa-share-square"/>
+                            <!--<button type="object" name="btn_ebi_re_send" string="ReEnviar" class="oe_highlight" attrs="{'invisible': [('ebi_state', 'not in', ['send'])]}" style="display: inline-block; float: left; margin: 0 2px;" icon="fa-share-square"/>-->
+                            <button type="object" name="btn_ebi_draft" string="Borrador" style="display: inline-block; float: left;margin: 0 2px;" attrs="{'invisible': [('ebi_state', 'not in', ['draft', 'send'])]}" confirm="¿Esta totalmente seguro que desea volver a borrador este documento? Tome en cuenta que todo lo que haya enviado anteriormente será eliminado." icon="fa-pencil-square-o"/>
+                            <!--<button type="object" name="btn_ebi_cancel" string="Anular" attrs="{'invisible': [('ebi_state', '!=', 'auth')]}" style="display: inline-block; float: left;margin: 0 2px;" icon="fa-close"/>-->
+                            <button type="object" name="btn_ebi_send_mail" string="Enviar por Correo" attrs="{'invisible': [('ebi_state', '!=', 'auth')]}" class="oe_highlight" style="display: inline-block; float: left;margin: 0 2px;" icon="fa-envelope"/>
+                            <field name="ebi_state" widget="statusbar" statusbar_visible="draft,send,auth" style="display: inline-block; float: right;"/>
+                        </header>
+                        <group col="4" colspan="4">
+                            <group string="Información">
+                                <field name="ebi_last_check_date"/>
+                                <field name="ebi_send_date"/>
+                                <field name="ebi_auth_date"/>
+                            </group>
+                            <group string="Identificadores del Documento">
+                                <field name="ebi_environment"/>
+                                <field name="ebi_access_key" invisible="0"/>
+                                <field name="edig_id" attrs="{'readonly': [('state', '!=', 'draft')]}" options="{'no_create': True}" domain="[('company_id','=', company_id)]"/>
+                                <field name="ebi_auth_key" invisible="1"/>
+                            </group>
+                        </group>
+                        <notebook>
+                            <page string="Comunicación">
+                                <field name="ebi_messages_ids" nolabel="1" readonly="1">
+                                    <tree colors="navy:type=='message';royalblue:type=='interno';darkred:type=='error';green:type=='sri';">
+                                        <field name="sequence"/>
+                                        <field name="title"/>
+                                        <field name="message"/>
+                                        <field name="create_date"/>
+                                        <field name="state"/>
+                                        <field name="type" invisible="1"/>
+                                    </tree>
+                                    <form>
+                                        <group col="4">
+                                            <field name="title"/>
+                                            <field name="message"/>
+                                            <field name="access_key" colspan="4"/>
+                                        </group>
+                                        <separator string="Información adicional"/>
+                                        <field name="extended_message"/>
+                                    </form>
+                                </field>
+                            </page>
+                            <page string="FE XML">
+                                <field name="xml_file"/>
+                            </page>
+                        </notebook>
+                    </page>
+                </notebook>
+
+
+            </field>
+        </record>
+
+
+
+	</data>
+</openerp>
