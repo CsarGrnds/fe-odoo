@@ -1,2 +1,2 @@
 # fe-odoo
-Modulo de Factura electronica para Odoo
+Modulo de Factura electronica para Odoo 9
