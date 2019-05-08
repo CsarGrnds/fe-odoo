@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <record id="product_code_type_1" model="invoice.product.code.type">
+            <field name="name">Código del producto del vendedor</field>
+            <field name="code">01</field>
+        </record>
+
+        <record id="product_code_type_2" model="invoice.product.code.type">
+            <field name="name">Código del producto del comprador</field>
+            <field name="code">02</field>
+        </record>
+
+        <record id="product_code_type_3" model="invoice.product.code.type">
+            <field name="name">Código del producto asignado por la industria</field>
+            <field name="code">03</field>
+        </record>
+
+        <record id="product_code_type_4" model="invoice.product.code.type">
+            <field name="name">Código de uso interno</field>
+            <field name="code">04</field>
+        </record>
+
+        <record id="product_code_type_5" model="invoice.product.code.type">
+            <field name="name">Otros</field>
+            <field name="code">05</field>
+        </record>
+
+    </data>
+</odoo>

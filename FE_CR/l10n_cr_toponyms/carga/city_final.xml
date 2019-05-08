@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data>
+		<record id="city_new_id_1_sanjose" model="res.country.state.city">
+			<field name="state_id" ref="country_state_new_id_1"/>
+			<field name="code">1</field>
+			<field name="name">San José</field>
+		</record>
+		<record id="city_new_id_2_escazu" model="res.country.state.city">
+			<field name="state_id" ref="country_state_new_id_1"/>
+			<field name="code">2</field>
+			<field name="name">Escazú</field>
+		</record>
+		<record id="city_new_id_3_desamparados" model="res.country.state.city">
+			<field name="state_id" ref="country_state_new_id_1"/>
+			<field name="code">3</field>
+			<field name="name">Desamparados</field>
+		</record>
+		<record id="city_new_id_4_puriscal" model="res.country.state.city">
+			<field name="state_id" ref="country_state_new_id_1"/>
+			<field name="code">4</field>
+			<field name="name">Puriscal</field>
+		</record>
+		<record id="city_new_id_5_tarrazu" model="res.country.state.city">
+			<field name="state_id" ref="country_state_new_id_1"/>
+			<field name="code">5</field>
+			<field name="name">Tarrazú</field>
+		</record>
+		<record id="city_new_id_6_aserri" model="res.country.state.city">
+			<field name="state_id" ref="country_state_new_id_1"/>
+			<field name="code">6</field>
+			<field name="name">Aserrí</field>
+		</record>
+		<record id="city_new_id_7_mora" model="res.country.state.city">
+			<field name="state_id" ref="country_state_new_id_1"/>
+			<field name="code">7</field>
+			<field name="name">Mora</field>
+		</record>
+		<record id="city_new_id_8_goicoechea" model="res.country.state.city">
+			<field name="state_id" ref="country_state_new_id_1"/>
+			<field name="code">8</field>
+			<field name="name">Goicoechea</field>
+		</record>
+		<record id="city_new_id_9_santaana" model="res.country.state.city">
+			<field name="state_id" ref="country_state_new_id_1"/>
+			<field name="code">9</field>
+			<field name="name">Santa Ana</field>
+		</record>
+		<record id="city_new_id_10_alajuelita" model="res.country.state.city">
+			<field name="state_id" ref="country_state_new_id_1"/>
+			<field name="code">10</field>
+			<field name="name">Alajuelita</field>
+		</record>
+		<record id="city_new_id_11_vasquezdecoronado" model="res.country.state.city">
+			<field name="state_id" ref="country_state_new_id_1"/>
+			<field name="code">11</field>
+			<field name="name">Vásquez de Coronado</field>
+		</record>
+		<record id="city_new_id_12_acosta" model="res.country.state.city">
+			<field name="state_id" ref="country_state_new_id_1"/>
+			<field name="code">12</field>
+			<field name="name">Acosta</field>
+		</record>
+		<record id="city_new_id_13_tibas" model="res.country.state.city">
+			<field name="state_id" ref="country_state_new_id_1"/>
+			<field name="code">13</field>
+			<field name="name">Tibás</field>
+		</record>
+		<record id="city_new_id_14_moravia" model="res.country.state.city">
+			<field name="state_id" ref="country_state_new_id_1"/>
+			<field name="code">14</field>
+			<field name="name">Moravia</field>
+		</record>
+		<record id="city_new_id_15_montesdeoca" model="res.country.state.city">
+			<field name="state_id" ref="country_state_new_id_1"/>
+			<field name="code">15</field>
+			<field name="name">Montes de Oca</field>
+		</record>
+		<record id="city_new_id_16_turrubares" model="res.country.state.city">
+			<field name="state_id" ref="country_state_new_id_1"/>
+			<field name="code">16</field>
+			<field name="name">Turrubares</field>
+		</record>
+		<record id="city_new_id_17_dota" model="res.country.state.city">
+			<field name="state_id" ref="country_state_new_id_1"/>
+			<field name="code">17</field>
+			<field name="name">Dota</field>
+		</record>
+		<record id="city_new_id_18_curridabat" model="res.country.state.city">
+			<field name="state_id" ref="country_state_new_id_1"/>
+			<field name="code">18</field>
+			<field name="name">Curridabat</field>
+		</record>
+		<record id="city_new_id_19_perezzeledon" model="res.country.state.city">
+			<field name="state_id" ref="country_state_new_id_1"/>
+			<field name="code">19</field>
+			<field name="name">Pérez Zeledón</field>
+		</record>
+		<record id="city_new_id_20_leoncortezcastro" model="res.country.state.city">
+			<field name="state_id" ref="country_state_new_id_1"/>
+			<field name="code">20</field>
+			<field name="name">León Cortéz Castro</field>
+		</record>
+		<record id="city_new_id_1_alajuela" model="res.country.state.city">
+			<field name="state_id" ref="country_state_new_id_2"/>
+			<field name="code">1</field>
+			<field name="name">Alajuela</field>
+		</record>
+		<record id="city_new_id_2_sanramon" model="res.country.state.city">
+			<field name="state_id" ref="country_state_new_id_2"/>
+			<field name="code">2</field>
+			<field name="name">San Ramón</field>
+		</record>
+		<record id="city_new_id_3_grecia" model="res.country.state.city">
+			<field name="state_id" ref="country_state_new_id_2"/>
+			<field name="code">3</field>
+			<field name="name">Grecia</field>
+		</record>
+		<record id="city_new_id_4_sanmateo" model="res.country.state.city">
+			<field name="state_id" ref="country_state_new_id_2"/>
+			<field name="code">4</field>
+			<field name="name">San Mateo</field>
+		</record>
+		<record id="city_new_id_5_atenas" model="res.country.state.city">
+			<field name="state_id" ref="country_state_new_id_2"/>
+			<field name="code">5</field>
+			<field name="name">Atenas</field>
+		</record>
+		<record id="city_new_id_6_naranjo" model="res.country.state.city">
+			<field name="state_id" ref="country_state_new_id_2"/>
+			<field name="code">6</field>
+			<field name="name">Naranjo</field>
+		</record>
+		<record id="city_new_id_7_palmares" model="res.country.state.city">
+			<field name="state_id" ref="country_state_new_id_2"/>
+			<field name="code">7</field>
+			<field name="name">Palmares</field>
+		</record>
+		<record id="city_new_id_8_poas" model="res.country.state.city">
+			<field name="state_id" ref="country_state_new_id_2"/>
+			<field name="code">8</field>
+			<field name="name">Poás</field>
+		</record>
+		<record id="city_new_id_9_orotina" model="res.country.state.city">
+			<field name="state_id" ref="country_state_new_id_2"/>
+			<field name="code">9</field>
+			<field name="name">Orotina</field>
+		</record>
+		<record id="city_new_id_10_sancarlos" model="res.country.state.city">
+			<field name="state_id" ref="country_state_new_id_2"/>
+			<field name="code">10</field>
+			<field name="name">San Carlos</field>
+		</record>
+		<record id="city_new_id_11_zarcero" model="res.country.state.city">
+			<field name="state_id" ref="country_state_new_id_2"/>
+			<field name="code">11</field>
+			<field name="name">Zarcero</field>
+		</record>
+		<record id="city_new_id_12_valverdevega" model="res.country.state.city">
+			<field name="state_id" ref="country_state_new_id_2"/>
+			<field name="code">12</field>
+			<field name="name">Valverde Vega</field>
+		</record>
+		<record id="city_new_id_13_upala" model="res.country.state.city">
+			<field name="state_id" ref="country_state_new_id_2"/>
+			<field name="code">13</field>
+			<field name="name">Upala</field>
+		</record>
+		<record id="city_new_id_14_loschiles" model="res.country.state.city">
+			<field name="state_id" ref="country_state_new_id_2"/>
+			<field name="code">14</field>
+			<field name="name">Los Chiles</field>
+		</record>
+		<record id="city_new_id_15_guatuso" model="res.country.state.city">
+			<field name="state_id" ref="country_state_new_id_2"/>
+			<field name="code">15</field>
+			<field name="name">Guatuso</field>
+		</record>
+		<record id="city_new_id_1_cartago" model="res.country.state.city">
+			<field name="state_id" ref="country_state_new_id_3"/>
+			<field name="code">1</field>
+			<field name="name">Cartago</field>
+		</record>
+		<record id="city_new_id_2_paraiso" model="res.country.state.city">
+			<field name="state_id" ref="country_state_new_id_3"/>
+			<field name="code">2</field>
+			<field name="name">Paraíso</field>
+		</record>
+		<record id="city_new_id_3_launion" model="res.country.state.city">
+			<field name="state_id" ref="country_state_new_id_3"/>
+			<field name="code">3</field>
+			<field name="name">La Unión</field>
+		</record>
+		<record id="city_new_id_4_jimenez" model="res.country.state.city">
+			<field name="state_id" ref="country_state_new_id_3"/>
+			<field name="code">4</field>
+			<field name="name">Jiménez</field>
+		</record>
+		<record id="city_new_id_5_turrialba" model="res.country.state.city">
+			<field name="state_id" ref="country_state_new_id_3"/>
+			<field name="code">5</field>
+			<field name="name">Turrialba</field>
+		</record>
+		<record id="city_new_id_6_alvarado" model="res.country.state.city">
+			<field name="state_id" ref="country_state_new_id_3"/>
+			<field name="code">6</field>
+			<field name="name">Alvarado</field>
+		</record>
+		<record id="city_new_id_7_oreamuno" model="res.country.state.city">
+			<field name="state_id" ref="country_state_new_id_3"/>
+			<field name="code">7</field>
+			<field name="name">Oreamuno</field>
+		</record>
+		<record id="city_new_id_8_elguarco" model="res.country.state.city">
+			<field name="state_id" ref="country_state_new_id_3"/>
+			<field name="code">8</field>
+			<field name="name">El Guarco</field>
+		</record>
+		<record id="city_new_id_1_heredia" model="res.country.state.city">
+			<field name="state_id" ref="country_state_new_id_4"/>
+			<field name="code">1</field>
+			<field name="name">Heredia</field>
+		</record>
+		<record id="city_new_id_2_barva" model="res.country.state.city">
+			<field name="state_id" ref="country_state_new_id_4"/>
+			<field name="code">2</field>
+			<field name="name">Barva</field>
+		</record>
+		<record id="city_new_id_3_santodomingo" model="res.country.state.city">
+			<field name="state_id" ref="country_state_new_id_4"/>
+			<field name="code">3</field>
+			<field name="name">Santo Domingo</field>
+		</record>
+		<record id="city_new_id_4_santabarbara" model="res.country.state.city">
+			<field name="state_id" ref="country_state_new_id_4"/>
+			<field name="code">4</field>
+			<field name="name">Santa Bárbara</field>
+		</record>
+		<record id="city_new_id_5_sanrafael" model="res.country.state.city">
+			<field name="state_id" ref="country_state_new_id_4"/>
+			<field name="code">5</field>
+			<field name="name">San Rafaél</field>
+		</record>
+		<record id="city_new_id_6_sanisidro" model="res.country.state.city">
+			<field name="state_id" ref="country_state_new_id_4"/>
+			<field name="code">6</field>
+			<field name="name">San Isidro</field>
+		</record>
+		<record id="city_new_id_7_belen" model="res.country.state.city">
+			<field name="state_id" ref="country_state_new_id_4"/>
+			<field name="code">7</field>
+			<field name="name">Belén</field>
+		</record>
+		<record id="city_new_id_8_flores" model="res.country.state.city">
+			<field name="state_id" ref="country_state_new_id_4"/>
+			<field name="code">8</field>
+			<field name="name">Flores</field>
+		</record>
+		<record id="city_new_id_9_sanpablo" model="res.country.state.city">
+			<field name="state_id" ref="country_state_new_id_4"/>
+			<field name="code">9</field>
+			<field name="name">San Pablo</field>
+		</record>
+		<record id="city_new_id_10_sarapiqui" model="res.country.state.city">
+			<field name="state_id" ref="country_state_new_id_4"/>
+			<field name="code">10</field>
+			<field name="name">Sarapiquí</field>
+		</record>
+		<record id="city_new_id_1_liberia" model="res.country.state.city">
+			<field name="state_id" ref="country_state_new_id_5"/>
+			<field name="code">1</field>
+			<field name="name">Liberia</field>
+		</record>
+		<record id="city_new_id_2_nicoya" model="res.country.state.city">
+			<field name="state_id" ref="country_state_new_id_5"/>
+			<field name="code">2</field>
+			<field name="name">Nicoya</field>
+		</record>
+		<record id="city_new_id_3_santacruz" model="res.country.state.city">
+			<field name="state_id" ref="country_state_new_id_5"/>
+			<field name="code">3</field>
+			<field name="name">Santa Cruz</field>
+		</record>
+		<record id="city_new_id_4_bagaces" model="res.country.state.city">
+			<field name="state_id" ref="country_state_new_id_5"/>
+			<field name="code">4</field>
+			<field name="name">Bagaces</field>
+		</record>
+		<record id="city_new_id_5_carrillo" model="res.country.state.city">
+			<field name="state_id" ref="country_state_new_id_5"/>
+			<field name="code">5</field>
+			<field name="name">Carrillo</field>
+		</record>
+		<record id="city_new_id_6_canas" model="res.country.state.city">
+			<field name="state_id" ref="country_state_new_id_5"/>
+			<field name="code">6</field>
+			<field name="name">Cañas</field>
+		</record>
+		<record id="city_new_id_7_abangares" model="res.country.state.city">
+			<field name="state_id" ref="country_state_new_id_5"/>
+			<field name="code">7</field>
+			<field name="name">Abangáres</field>
+		</record>
+		<record id="city_new_id_8_tilaran" model="res.country.state.city">
+			<field name="state_id" ref="country_state_new_id_5"/>
+			<field name="code">8</field>
+			<field name="name">Tilarán</field>
+		</record>
+		<record id="city_new_id_9_nandayure" model="res.country.state.city">
+			<field name="state_id" ref="country_state_new_id_5"/>
+			<field name="code">9</field>
+			<field name="name">Nandayure</field>
+		</record>
+		<record id="city_new_id_10_lacruz" model="res.country.state.city">
+			<field name="state_id" ref="country_state_new_id_5"/>
+			<field name="code">10</field>
+			<field name="name">La Cruz</field>
+		</record>
+		<record id="city_new_id_11_hojancha" model="res.country.state.city">
+			<field name="state_id" ref="country_state_new_id_5"/>
+			<field name="code">11</field>
+			<field name="name">Hojancha</field>
+		</record>
+		<record id="city_new_id_1_puntarenas" model="res.country.state.city">
+			<field name="state_id" ref="country_state_new_id_6"/>
+			<field name="code">1</field>
+			<field name="name">Puntarenas</field>
+		</record>
+		<record id="city_new_id_2_esparza" model="res.country.state.city">
+			<field name="state_id" ref="country_state_new_id_6"/>
+			<field name="code">2</field>
+			<field name="name">Esparza</field>
+		</record>
+		<record id="city_new_id_3_buenosaires" model="res.country.state.city">
+			<field name="state_id" ref="country_state_new_id_6"/>
+			<field name="code">3</field>
+			<field name="name">Buenos Aires</field>
+		</record>
+		<record id="city_new_id_4_montesdeoro" model="res.country.state.city">
+			<field name="state_id" ref="country_state_new_id_6"/>
+			<field name="code">4</field>
+			<field name="name">Montes de Oro</field>
+		</record>
+		<record id="city_new_id_5_osa" model="res.country.state.city">
+			<field name="state_id" ref="country_state_new_id_6"/>
+			<field name="code">5</field>
+			<field name="name">Osa</field>
+		</record>
+		<record id="city_new_id_6_aguirre" model="res.country.state.city">
+			<field name="state_id" ref="country_state_new_id_6"/>
+			<field name="code">6</field>
+			<field name="name">Aguirre</field>
+		</record>
+		<record id="city_new_id_7_golfito" model="res.country.state.city">
+			<field name="state_id" ref="country_state_new_id_6"/>
+			<field name="code">7</field>
+			<field name="name">Golfito</field>
+		</record>
+		<record id="city_new_id_8_cotobrus" model="res.country.state.city">
+			<field name="state_id" ref="country_state_new_id_6"/>
+			<field name="code">8</field>
+			<field name="name">Coto Brus</field>
+		</record>
+		<record id="city_new_id_9_parrita" model="res.country.state.city">
+			<field name="state_id" ref="country_state_new_id_6"/>
+			<field name="code">9</field>
+			<field name="name">Parrita</field>
+		</record>
+		<record id="city_new_id_10_corredores" model="res.country.state.city">
+			<field name="state_id" ref="country_state_new_id_6"/>
+			<field name="code">10</field>
+			<field name="name">Corredores</field>
+		</record>
+		<record id="city_new_id_11_garabito" model="res.country.state.city">
+			<field name="state_id" ref="country_state_new_id_6"/>
+			<field name="code">11</field>
+			<field name="name">Garabito</field>
+		</record>
+		<record id="city_new_id_1_limon" model="res.country.state.city">
+			<field name="state_id" ref="country_state_new_id_7"/>
+			<field name="code">1</field>
+			<field name="name">Limón</field>
+		</record>
+		<record id="city_new_id_2_pococi" model="res.country.state.city">
+			<field name="state_id" ref="country_state_new_id_7"/>
+			<field name="code">2</field>
+			<field name="name">Pococí</field>
+		</record>
+		<record id="city_new_id_3_siquirres" model="res.country.state.city">
+			<field name="state_id" ref="country_state_new_id_7"/>
+			<field name="code">3</field>
+			<field name="name">Siquirres</field>
+		</record>
+		<record id="city_new_id_4_talamanca" model="res.country.state.city">
+			<field name="state_id" ref="country_state_new_id_7"/>
+			<field name="code">4</field>
+			<field name="name">Talamanca</field>
+		</record>
+		<record id="city_new_id_5_matina" model="res.country.state.city">
+			<field name="state_id" ref="country_state_new_id_7"/>
+			<field name="code">5</field>
+			<field name="name">Matina</field>
+		</record>
+		<record id="city_new_id_6_guacimo" model="res.country.state.city">
+			<field name="state_id" ref="country_state_new_id_7"/>
+			<field name="code">6</field>
+			<field name="name">Guácimo</field>
+		</record>
+	</data>
+</openerp>

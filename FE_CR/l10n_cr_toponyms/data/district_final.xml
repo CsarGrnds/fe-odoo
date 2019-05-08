@@ -1,0 +1,2380 @@
+<?xml version="1.0" encoding="utf-8"?>
+<openerp>
+	<data noupdate="0">
+		<record forcecreate="1" id="district_new_id_1_carmen" model="res.country.district">
+			<field name="city_id" ref="city_new_id_1_sanjose"/>
+			<field name="code">01</field>
+			<field name="name">CARMEN</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_2_merced" model="res.country.district">
+			<field name="city_id" ref="city_new_id_1_sanjose"/>
+			<field name="code">02</field>
+			<field name="name">MERCED</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_3_hospital" model="res.country.district">
+			<field name="city_id" ref="city_new_id_1_sanjose"/>
+			<field name="code">03</field>
+			<field name="name">HOSPITAL</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_4_catedral" model="res.country.district">
+			<field name="city_id" ref="city_new_id_1_sanjose"/>
+			<field name="code">04</field>
+			<field name="name">CATEDRAL</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_5_zapote" model="res.country.district">
+			<field name="city_id" ref="city_new_id_1_sanjose"/>
+			<field name="code">05</field>
+			<field name="name">ZAPOTE</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_6_sanfranciscodedosrios" model="res.country.district">
+			<field name="city_id" ref="city_new_id_1_sanjose"/>
+			<field name="code">06</field>
+			<field name="name">SAN FRANCISCO DE DOS RÍOS</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_7_uruca" model="res.country.district">
+			<field name="city_id" ref="city_new_id_1_sanjose"/>
+			<field name="code">07</field>
+			<field name="name">URUCA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_8_mataredonda" model="res.country.district">
+			<field name="city_id" ref="city_new_id_1_sanjose"/>
+			<field name="code">08</field>
+			<field name="name">MATA REDONDA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_9_pavas" model="res.country.district">
+			<field name="city_id" ref="city_new_id_1_sanjose"/>
+			<field name="code">09</field>
+			<field name="name">PAVAS</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_10_hatillo" model="res.country.district">
+			<field name="city_id" ref="city_new_id_1_sanjose"/>
+			<field name="code">10</field>
+			<field name="name">HATILLO</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_11_sansebastian" model="res.country.district">
+			<field name="city_id" ref="city_new_id_1_sanjose"/>
+			<field name="code">11</field>
+			<field name="name">SAN SEBASTIÁN</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_1_escazu" model="res.country.district">
+			<field name="city_id" ref="city_new_id_2_escazu"/>
+			<field name="code">01</field>
+			<field name="name">ESCAZÚ</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_2_sanantonio" model="res.country.district">
+			<field name="city_id" ref="city_new_id_2_escazu"/>
+			<field name="code">02</field>
+			<field name="name">SAN ANTONIO</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_3_sanrafael" model="res.country.district">
+			<field name="city_id" ref="city_new_id_2_escazu"/>
+			<field name="code">03</field>
+			<field name="name">SAN RAFAEL</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_1_desamparados" model="res.country.district">
+			<field name="city_id" ref="city_new_id_3_desamparados"/>
+			<field name="code">01</field>
+			<field name="name">DESAMPARADOS</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_2_sanmiguel" model="res.country.district">
+			<field name="city_id" ref="city_new_id_3_desamparados"/>
+			<field name="code">02</field>
+			<field name="name">SAN MIGUEL</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_3_sanjuandedios" model="res.country.district">
+			<field name="city_id" ref="city_new_id_3_desamparados"/>
+			<field name="code">03</field>
+			<field name="name">SAN JUAN DE DIOS</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_4_sanrafaelarriba" model="res.country.district">
+			<field name="city_id" ref="city_new_id_3_desamparados"/>
+			<field name="code">04</field>
+			<field name="name">SAN RAFAEL ARRIBA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_5_sanantonio" model="res.country.district">
+			<field name="city_id" ref="city_new_id_3_desamparados"/>
+			<field name="code">05</field>
+			<field name="name">SAN ANTONIO</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_6_frailes" model="res.country.district">
+			<field name="city_id" ref="city_new_id_3_desamparados"/>
+			<field name="code">06</field>
+			<field name="name">FRAILES</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_7_patarra" model="res.country.district">
+			<field name="city_id" ref="city_new_id_3_desamparados"/>
+			<field name="code">07</field>
+			<field name="name">PATARRÁ</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_8_sancristobal" model="res.country.district">
+			<field name="city_id" ref="city_new_id_3_desamparados"/>
+			<field name="code">08</field>
+			<field name="name">SAN CRISTÓBAL</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_9_rosario" model="res.country.district">
+			<field name="city_id" ref="city_new_id_3_desamparados"/>
+			<field name="code">09</field>
+			<field name="name">ROSARIO</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_10_damas" model="res.country.district">
+			<field name="city_id" ref="city_new_id_3_desamparados"/>
+			<field name="code">10</field>
+			<field name="name">DAMAS</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_11_sanrafaelabajo" model="res.country.district">
+			<field name="city_id" ref="city_new_id_3_desamparados"/>
+			<field name="code">11</field>
+			<field name="name">SAN RAFAEL ABAJO</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_12_gravilias" model="res.country.district">
+			<field name="city_id" ref="city_new_id_3_desamparados"/>
+			<field name="code">12</field>
+			<field name="name">GRAVILIAS</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_13_losguido" model="res.country.district">
+			<field name="city_id" ref="city_new_id_3_desamparados"/>
+			<field name="code">13</field>
+			<field name="name">LOS GUIDO</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_1_santiago" model="res.country.district">
+			<field name="city_id" ref="city_new_id_4_puriscal"/>
+			<field name="code">01</field>
+			<field name="name">SANTIAGO</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_2_mercedessur" model="res.country.district">
+			<field name="city_id" ref="city_new_id_4_puriscal"/>
+			<field name="code">02</field>
+			<field name="name">MERCEDES SUR</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_3_barbacoas" model="res.country.district">
+			<field name="city_id" ref="city_new_id_4_puriscal"/>
+			<field name="code">03</field>
+			<field name="name">BARBACOAS</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_4_grifoalto" model="res.country.district">
+			<field name="city_id" ref="city_new_id_4_puriscal"/>
+			<field name="code">04</field>
+			<field name="name">GRIFO ALTO</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_5_sanrafael" model="res.country.district">
+			<field name="city_id" ref="city_new_id_4_puriscal"/>
+			<field name="code">05</field>
+			<field name="name">SAN RAFAEL</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_6_candelarita" model="res.country.district">
+			<field name="city_id" ref="city_new_id_4_puriscal"/>
+			<field name="code">06</field>
+			<field name="name">CANDELARITA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_7_desamparaditos" model="res.country.district">
+			<field name="city_id" ref="city_new_id_4_puriscal"/>
+			<field name="code">07</field>
+			<field name="name">DESAMPARADITOS</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_8_sanantonio" model="res.country.district">
+			<field name="city_id" ref="city_new_id_4_puriscal"/>
+			<field name="code">08</field>
+			<field name="name">SAN ANTONIO</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_9_chires" model="res.country.district">
+			<field name="city_id" ref="city_new_id_4_puriscal"/>
+			<field name="code">09</field>
+			<field name="name">CHIRES</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_1_sanmarcos" model="res.country.district">
+			<field name="city_id" ref="city_new_id_5_tarrazu"/>
+			<field name="code">01</field>
+			<field name="name">SAN MARCOS</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_2_sanlorenzo" model="res.country.district">
+			<field name="city_id" ref="city_new_id_5_tarrazu"/>
+			<field name="code">02</field>
+			<field name="name">SAN LORENZO</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_3_sancarlos" model="res.country.district">
+			<field name="city_id" ref="city_new_id_5_tarrazu"/>
+			<field name="code">03</field>
+			<field name="name">SAN CARLOS</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_1_aserri" model="res.country.district">
+			<field name="city_id" ref="city_new_id_6_aserri"/>
+			<field name="code">01</field>
+			<field name="name">ASERRI</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_2_tarbaca" model="res.country.district">
+			<field name="city_id" ref="city_new_id_6_aserri"/>
+			<field name="code">02</field>
+			<field name="name">TARBACA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_3_vueltadejorco" model="res.country.district">
+			<field name="city_id" ref="city_new_id_6_aserri"/>
+			<field name="code">03</field>
+			<field name="name">VUELTA DE JORCO</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_4_sangabriel" model="res.country.district">
+			<field name="city_id" ref="city_new_id_6_aserri"/>
+			<field name="code">04</field>
+			<field name="name">SAN GABRIEL</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_5_legua" model="res.country.district">
+			<field name="city_id" ref="city_new_id_6_aserri"/>
+			<field name="code">05</field>
+			<field name="name">LEGUA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_6_monterrey" model="res.country.district">
+			<field name="city_id" ref="city_new_id_6_aserri"/>
+			<field name="code">06</field>
+			<field name="name">MONTERREY</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_7_salitrillos" model="res.country.district">
+			<field name="city_id" ref="city_new_id_6_aserri"/>
+			<field name="code">07</field>
+			<field name="name">SALITRILLOS</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_1_colon" model="res.country.district">
+			<field name="city_id" ref="city_new_id_7_mora"/>
+			<field name="code">01</field>
+			<field name="name">COLÓN</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_2_guayabo" model="res.country.district">
+			<field name="city_id" ref="city_new_id_7_mora"/>
+			<field name="code">02</field>
+			<field name="name">GUAYABO</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_3_tabarcia" model="res.country.district">
+			<field name="city_id" ref="city_new_id_7_mora"/>
+			<field name="code">03</field>
+			<field name="name">TABARCIA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_4_piedrasnegras" model="res.country.district">
+			<field name="city_id" ref="city_new_id_7_mora"/>
+			<field name="code">04</field>
+			<field name="name">PIEDRAS NEGRAS</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_5_picagres" model="res.country.district">
+			<field name="city_id" ref="city_new_id_7_mora"/>
+			<field name="code">05</field>
+			<field name="name">PICAGRES</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_6_jaris" model="res.country.district">
+			<field name="city_id" ref="city_new_id_7_mora"/>
+			<field name="code">06</field>
+			<field name="name">JARIS</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_7_quitirrisi" model="res.country.district">
+			<field name="city_id" ref="city_new_id_7_mora"/>
+			<field name="code">07</field>
+			<field name="name">QUITIRRISI</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_1_guadalupe" model="res.country.district">
+			<field name="city_id" ref="city_new_id_8_goicoechea"/>
+			<field name="code">01</field>
+			<field name="name">GUADALUPE</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_2_sanfrancisco" model="res.country.district">
+			<field name="city_id" ref="city_new_id_8_goicoechea"/>
+			<field name="code">02</field>
+			<field name="name">SAN FRANCISCO</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_3_calleblancos" model="res.country.district">
+			<field name="city_id" ref="city_new_id_8_goicoechea"/>
+			<field name="code">03</field>
+			<field name="name">CALLE BLANCOS</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_4_matadeplatano" model="res.country.district">
+			<field name="city_id" ref="city_new_id_8_goicoechea"/>
+			<field name="code">04</field>
+			<field name="name">MATA DE PLÁTANO</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_5_ipis" model="res.country.district">
+			<field name="city_id" ref="city_new_id_8_goicoechea"/>
+			<field name="code">05</field>
+			<field name="name">IPÍS</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_6_ranchoredondo" model="res.country.district">
+			<field name="city_id" ref="city_new_id_8_goicoechea"/>
+			<field name="code">06</field>
+			<field name="name">RANCHO REDONDO</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_7_purral" model="res.country.district">
+			<field name="city_id" ref="city_new_id_8_goicoechea"/>
+			<field name="code">07</field>
+			<field name="name">PURRAL</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_1_santaana" model="res.country.district">
+			<field name="city_id" ref="city_new_id_9_santaana"/>
+			<field name="code">01</field>
+			<field name="name">SANTA ANA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_2_salitral" model="res.country.district">
+			<field name="city_id" ref="city_new_id_9_santaana"/>
+			<field name="code">02</field>
+			<field name="name">SALITRAL</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_3_pozos" model="res.country.district">
+			<field name="city_id" ref="city_new_id_9_santaana"/>
+			<field name="code">03</field>
+			<field name="name">POZOS</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_4_uruca" model="res.country.district">
+			<field name="city_id" ref="city_new_id_9_santaana"/>
+			<field name="code">04</field>
+			<field name="name">URUCA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_5_piedades" model="res.country.district">
+			<field name="city_id" ref="city_new_id_9_santaana"/>
+			<field name="code">05</field>
+			<field name="name">PIEDADES</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_6_brasil" model="res.country.district">
+			<field name="city_id" ref="city_new_id_9_santaana"/>
+			<field name="code">06</field>
+			<field name="name">BRASIL</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_1_alajuelita" model="res.country.district">
+			<field name="city_id" ref="city_new_id_10_alajuelita"/>
+			<field name="code">01</field>
+			<field name="name">ALAJUELITA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_2_sanjosecito" model="res.country.district">
+			<field name="city_id" ref="city_new_id_10_alajuelita"/>
+			<field name="code">02</field>
+			<field name="name">SAN JOSECITO</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_3_sanantonio" model="res.country.district">
+			<field name="city_id" ref="city_new_id_10_alajuelita"/>
+			<field name="code">03</field>
+			<field name="name">SAN ANTONIO</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_4_concepcion" model="res.country.district">
+			<field name="city_id" ref="city_new_id_10_alajuelita"/>
+			<field name="code">04</field>
+			<field name="name">CONCEPCIÓN</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_5_sanfelipe" model="res.country.district">
+			<field name="city_id" ref="city_new_id_10_alajuelita"/>
+			<field name="code">05</field>
+			<field name="name">SAN FELIPE</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_1_sanisidro" model="res.country.district">
+			<field name="city_id" ref="city_new_id_11_vasquezdecoronado"/>
+			<field name="code">01</field>
+			<field name="name">SAN ISIDRO</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_2_sanrafael" model="res.country.district">
+			<field name="city_id" ref="city_new_id_11_vasquezdecoronado"/>
+			<field name="code">02</field>
+			<field name="name">SAN RAFAEL</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_3_dulcenombredejesus" model="res.country.district">
+			<field name="city_id" ref="city_new_id_11_vasquezdecoronado"/>
+			<field name="code">03</field>
+			<field name="name">DULCE NOMBRE DE JESÚS</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_4_patalillo" model="res.country.district">
+			<field name="city_id" ref="city_new_id_11_vasquezdecoronado"/>
+			<field name="code">04</field>
+			<field name="name">PATALILLO</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_5_cascajal" model="res.country.district">
+			<field name="city_id" ref="city_new_id_11_vasquezdecoronado"/>
+			<field name="code">05</field>
+			<field name="name">CASCAJAL</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_1_sanignacio" model="res.country.district">
+			<field name="city_id" ref="city_new_id_12_acosta"/>
+			<field name="code">01</field>
+			<field name="name">SAN IGNACIO</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_2_guaitilvilla" model="res.country.district">
+			<field name="city_id" ref="city_new_id_12_acosta"/>
+			<field name="code">02</field>
+			<field name="name">GUAITIL Villa</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_3_palmichal" model="res.country.district">
+			<field name="city_id" ref="city_new_id_12_acosta"/>
+			<field name="code">03</field>
+			<field name="name">PALMICHAL</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_4_cangrejal" model="res.country.district">
+			<field name="city_id" ref="city_new_id_12_acosta"/>
+			<field name="code">04</field>
+			<field name="name">CANGREJAL</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_5_sabanillas" model="res.country.district">
+			<field name="city_id" ref="city_new_id_12_acosta"/>
+			<field name="code">05</field>
+			<field name="name">SABANILLAS</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_1_sanjuan" model="res.country.district">
+			<field name="city_id" ref="city_new_id_13_tibas"/>
+			<field name="code">01</field>
+			<field name="name">SAN JUAN</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_2_cincoesquinas" model="res.country.district">
+			<field name="city_id" ref="city_new_id_13_tibas"/>
+			<field name="code">02</field>
+			<field name="name">CINCO ESQUINAS</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_3_anselmollorente" model="res.country.district">
+			<field name="city_id" ref="city_new_id_13_tibas"/>
+			<field name="code">03</field>
+			<field name="name">ANSELMO LLORENTE</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_4_leonxiii" model="res.country.district">
+			<field name="city_id" ref="city_new_id_13_tibas"/>
+			<field name="code">04</field>
+			<field name="name">LEON XIII</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_5_colima" model="res.country.district">
+			<field name="city_id" ref="city_new_id_13_tibas"/>
+			<field name="code">05</field>
+			<field name="name">COLIMA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_1_sanvicente" model="res.country.district">
+			<field name="city_id" ref="city_new_id_14_moravia"/>
+			<field name="code">01</field>
+			<field name="name">SAN VICENTE</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_2_sanjeronimo" model="res.country.district">
+			<field name="city_id" ref="city_new_id_14_moravia"/>
+			<field name="code">02</field>
+			<field name="name">SAN JERÓNIMO</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_3_latrinidad" model="res.country.district">
+			<field name="city_id" ref="city_new_id_14_moravia"/>
+			<field name="code">03</field>
+			<field name="name">LA TRINIDAD</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_1_sanpedro" model="res.country.district">
+			<field name="city_id" ref="city_new_id_15_montesdeoca"/>
+			<field name="code">01</field>
+			<field name="name">SAN PEDRO</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_2_sabanilla" model="res.country.district">
+			<field name="city_id" ref="city_new_id_15_montesdeoca"/>
+			<field name="code">02</field>
+			<field name="name">SABANILLA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_3_mercedes" model="res.country.district">
+			<field name="city_id" ref="city_new_id_15_montesdeoca"/>
+			<field name="code">03</field>
+			<field name="name">MERCEDES</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_4_sanrafael" model="res.country.district">
+			<field name="city_id" ref="city_new_id_15_montesdeoca"/>
+			<field name="code">04</field>
+			<field name="name">SAN RAFAEL</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_1_sanpablo" model="res.country.district">
+			<field name="city_id" ref="city_new_id_16_turrubares"/>
+			<field name="code">01</field>
+			<field name="name">SAN PABLO</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_2_sanpedro" model="res.country.district">
+			<field name="city_id" ref="city_new_id_16_turrubares"/>
+			<field name="code">02</field>
+			<field name="name">SAN PEDRO</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_3_sanjuandemata" model="res.country.district">
+			<field name="city_id" ref="city_new_id_16_turrubares"/>
+			<field name="code">03</field>
+			<field name="name">SAN JUAN DE MATA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_4_sanluis" model="res.country.district">
+			<field name="city_id" ref="city_new_id_16_turrubares"/>
+			<field name="code">04</field>
+			<field name="name">SAN LUIS</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_5_carara" model="res.country.district">
+			<field name="city_id" ref="city_new_id_16_turrubares"/>
+			<field name="code">05</field>
+			<field name="name">CARARA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_1_santamaria" model="res.country.district">
+			<field name="city_id" ref="city_new_id_17_dota"/>
+			<field name="code">01</field>
+			<field name="name">SANTA MARÍA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_2_jardin" model="res.country.district">
+			<field name="city_id" ref="city_new_id_17_dota"/>
+			<field name="code">02</field>
+			<field name="name">JARDÍN</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_3_copey" model="res.country.district">
+			<field name="city_id" ref="city_new_id_17_dota"/>
+			<field name="code">03</field>
+			<field name="name">COPEY</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_1_curridabat" model="res.country.district">
+			<field name="city_id" ref="city_new_id_18_curridabat"/>
+			<field name="code">01</field>
+			<field name="name">CURRIDABAT</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_2_granadilla" model="res.country.district">
+			<field name="city_id" ref="city_new_id_18_curridabat"/>
+			<field name="code">02</field>
+			<field name="name">GRANADILLA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_3_sanchez" model="res.country.district">
+			<field name="city_id" ref="city_new_id_18_curridabat"/>
+			<field name="code">03</field>
+			<field name="name">SÁNCHEZ</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_4_tirrases" model="res.country.district">
+			<field name="city_id" ref="city_new_id_18_curridabat"/>
+			<field name="code">04</field>
+			<field name="name">TIRRASES</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_1_sanisidrodeelgeneral" model="res.country.district">
+			<field name="city_id" ref="city_new_id_19_perezzeledon"/>
+			<field name="code">01</field>
+			<field name="name">SAN ISIDRO DE EL GENERAL</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_2_elgeneral" model="res.country.district">
+			<field name="city_id" ref="city_new_id_19_perezzeledon"/>
+			<field name="code">02</field>
+			<field name="name">EL GENERAL</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_3_danielflores" model="res.country.district">
+			<field name="city_id" ref="city_new_id_19_perezzeledon"/>
+			<field name="code">03</field>
+			<field name="name">DANIEL FLORES</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_4_rivas" model="res.country.district">
+			<field name="city_id" ref="city_new_id_19_perezzeledon"/>
+			<field name="code">04</field>
+			<field name="name">RIVAS</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_5_sanpedro" model="res.country.district">
+			<field name="city_id" ref="city_new_id_19_perezzeledon"/>
+			<field name="code">05</field>
+			<field name="name">SAN PEDRO</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_6_platanares" model="res.country.district">
+			<field name="city_id" ref="city_new_id_19_perezzeledon"/>
+			<field name="code">06</field>
+			<field name="name">PLATANARES</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_7_pejibaye" model="res.country.district">
+			<field name="city_id" ref="city_new_id_19_perezzeledon"/>
+			<field name="code">07</field>
+			<field name="name">PEJIBAYE</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_8_cajon" model="res.country.district">
+			<field name="city_id" ref="city_new_id_19_perezzeledon"/>
+			<field name="code">08</field>
+			<field name="name">CAJÓN</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_9_baru" model="res.country.district">
+			<field name="city_id" ref="city_new_id_19_perezzeledon"/>
+			<field name="code">09</field>
+			<field name="name">BARÚ</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_10_rionuevo" model="res.country.district">
+			<field name="city_id" ref="city_new_id_19_perezzeledon"/>
+			<field name="code">10</field>
+			<field name="name">RÍO NUEVO</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_11_paramo" model="res.country.district">
+			<field name="city_id" ref="city_new_id_19_perezzeledon"/>
+			<field name="code">11</field>
+			<field name="name">PÁRAMO</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_1_sanpablo" model="res.country.district">
+			<field name="city_id" ref="city_new_id_20_leoncortezcastro"/>
+			<field name="code">01</field>
+			<field name="name">SAN PABLO</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_2_sanandres" model="res.country.district">
+			<field name="city_id" ref="city_new_id_20_leoncortezcastro"/>
+			<field name="code">02</field>
+			<field name="name">SAN ANDRÉS</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_3_llanobonito" model="res.country.district">
+			<field name="city_id" ref="city_new_id_20_leoncortezcastro"/>
+			<field name="code">03</field>
+			<field name="name">LLANO BONITO</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_4_sanisidro" model="res.country.district">
+			<field name="city_id" ref="city_new_id_20_leoncortezcastro"/>
+			<field name="code">04</field>
+			<field name="name">SAN ISIDRO</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_5_santacruz" model="res.country.district">
+			<field name="city_id" ref="city_new_id_20_leoncortezcastro"/>
+			<field name="code">05</field>
+			<field name="name">SANTA CRUZ</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_6_sanantonio" model="res.country.district">
+			<field name="city_id" ref="city_new_id_20_leoncortezcastro"/>
+			<field name="code">06</field>
+			<field name="name">SAN ANTONIO</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_1_alajuela" model="res.country.district">
+			<field name="city_id" ref="city_new_id_1_alajuela"/>
+			<field name="code">01</field>
+			<field name="name">ALAJUELA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_2_sanjose" model="res.country.district">
+			<field name="city_id" ref="city_new_id_1_alajuela"/>
+			<field name="code">02</field>
+			<field name="name">SAN JOSÉ</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_3_carrizal" model="res.country.district">
+			<field name="city_id" ref="city_new_id_1_alajuela"/>
+			<field name="code">03</field>
+			<field name="name">CARRIZAL</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_4_sanantonio" model="res.country.district">
+			<field name="city_id" ref="city_new_id_1_alajuela"/>
+			<field name="code">04</field>
+			<field name="name">SAN ANTONIO</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_5_guacima" model="res.country.district">
+			<field name="city_id" ref="city_new_id_1_alajuela"/>
+			<field name="code">05</field>
+			<field name="name">GUÁCIMA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_6_sanisidro" model="res.country.district">
+			<field name="city_id" ref="city_new_id_1_alajuela"/>
+			<field name="code">06</field>
+			<field name="name">SAN ISIDRO</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_7_sabanilla" model="res.country.district">
+			<field name="city_id" ref="city_new_id_1_alajuela"/>
+			<field name="code">07</field>
+			<field name="name">SABANILLA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_8_sanrafael" model="res.country.district">
+			<field name="city_id" ref="city_new_id_1_alajuela"/>
+			<field name="code">08</field>
+			<field name="name">SAN RAFAEL</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_9_riosegundo" model="res.country.district">
+			<field name="city_id" ref="city_new_id_1_alajuela"/>
+			<field name="code">09</field>
+			<field name="name">RÍO SEGUNDO</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_10_desamparados" model="res.country.district">
+			<field name="city_id" ref="city_new_id_1_alajuela"/>
+			<field name="code">10</field>
+			<field name="name">DESAMPARADOS</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_12_tambor" model="res.country.district">
+			<field name="city_id" ref="city_new_id_1_alajuela"/>
+			<field name="code">12</field>
+			<field name="name">TAMBOR</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_13_garita" model="res.country.district">
+			<field name="city_id" ref="city_new_id_1_alajuela"/>
+			<field name="code">13</field>
+			<field name="name">GARITA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_14_sarapiqui" model="res.country.district">
+			<field name="city_id" ref="city_new_id_1_alajuela"/>
+			<field name="code">14</field>
+			<field name="name">SARAPIQUÍ</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_11_turrucares" model="res.country.district">
+			<field name="city_id" ref="city_new_id_1_alajuela"/>
+			<field name="code">11</field>
+			<field name="name">TURRÚCARES</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_1_sanramon" model="res.country.district">
+			<field name="city_id" ref="city_new_id_2_sanramon"/>
+			<field name="code">01</field>
+			<field name="name">SAN RAMÓN</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_2_santiago" model="res.country.district">
+			<field name="city_id" ref="city_new_id_2_sanramon"/>
+			<field name="code">02</field>
+			<field name="name">SANTIAGO</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_3_sanjuan" model="res.country.district">
+			<field name="city_id" ref="city_new_id_2_sanramon"/>
+			<field name="code">03</field>
+			<field name="name">SAN JUAN</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_4_piedadesnorte" model="res.country.district">
+			<field name="city_id" ref="city_new_id_2_sanramon"/>
+			<field name="code">04</field>
+			<field name="name">PIEDADES NORTE</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_5_piedadessur" model="res.country.district">
+			<field name="city_id" ref="city_new_id_2_sanramon"/>
+			<field name="code">05</field>
+			<field name="name">PIEDADES SUR</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_6_sanrafael" model="res.country.district">
+			<field name="city_id" ref="city_new_id_2_sanramon"/>
+			<field name="code">06</field>
+			<field name="name">SAN RAFAEL</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_7_sanisidro" model="res.country.district">
+			<field name="city_id" ref="city_new_id_2_sanramon"/>
+			<field name="code">07</field>
+			<field name="name">SAN ISIDRO</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_8_angeles" model="res.country.district">
+			<field name="city_id" ref="city_new_id_2_sanramon"/>
+			<field name="code">08</field>
+			<field name="name">ÁNGELES</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_9_alfaro" model="res.country.district">
+			<field name="city_id" ref="city_new_id_2_sanramon"/>
+			<field name="code">09</field>
+			<field name="name">ALFARO</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_10_volio" model="res.country.district">
+			<field name="city_id" ref="city_new_id_2_sanramon"/>
+			<field name="code">10</field>
+			<field name="name">VOLIO</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_11_concepcion" model="res.country.district">
+			<field name="city_id" ref="city_new_id_2_sanramon"/>
+			<field name="code">11</field>
+			<field name="name">CONCEPCIÓN</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_12_zapotal" model="res.country.district">
+			<field name="city_id" ref="city_new_id_2_sanramon"/>
+			<field name="code">12</field>
+			<field name="name">ZAPOTAL</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_13_penasblancas" model="res.country.district">
+			<field name="city_id" ref="city_new_id_2_sanramon"/>
+			<field name="code">13</field>
+			<field name="name">PEÑAS BLANCAS</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_1_grecia" model="res.country.district">
+			<field name="city_id" ref="city_new_id_3_grecia"/>
+			<field name="code">01</field>
+			<field name="name">GRECIA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_2_sanisidro" model="res.country.district">
+			<field name="city_id" ref="city_new_id_3_grecia"/>
+			<field name="code">02</field>
+			<field name="name">SAN ISIDRO</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_3_sanjose" model="res.country.district">
+			<field name="city_id" ref="city_new_id_3_grecia"/>
+			<field name="code">03</field>
+			<field name="name">SAN JOSÉ</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_4_sanroque" model="res.country.district">
+			<field name="city_id" ref="city_new_id_3_grecia"/>
+			<field name="code">04</field>
+			<field name="name">SAN ROQUE</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_5_tacares" model="res.country.district">
+			<field name="city_id" ref="city_new_id_3_grecia"/>
+			<field name="code">05</field>
+			<field name="name">TACARES</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_6_riocuarto" model="res.country.district">
+			<field name="city_id" ref="city_new_id_3_grecia"/>
+			<field name="code">06</field>
+			<field name="name">RÍO CUARTO</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_7_puentedepiedra" model="res.country.district">
+			<field name="city_id" ref="city_new_id_3_grecia"/>
+			<field name="code">07</field>
+			<field name="name">PUENTE DE PIEDRA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_8_bolivar" model="res.country.district">
+			<field name="city_id" ref="city_new_id_3_grecia"/>
+			<field name="code">08</field>
+			<field name="name">BOLÍVAR</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_1_sanmateo" model="res.country.district">
+			<field name="city_id" ref="city_new_id_4_sanmateo"/>
+			<field name="code">01</field>
+			<field name="name">SAN MATEO</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_2_desmonte" model="res.country.district">
+			<field name="city_id" ref="city_new_id_4_sanmateo"/>
+			<field name="code">02</field>
+			<field name="name">DESMONTE</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_3_jesusmaria" model="res.country.district">
+			<field name="city_id" ref="city_new_id_4_sanmateo"/>
+			<field name="code">03</field>
+			<field name="name">JESÚS MARÍA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_4_labrador" model="res.country.district">
+			<field name="city_id" ref="city_new_id_4_sanmateo"/>
+			<field name="code">04</field>
+			<field name="name">LABRADOR</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_1_atenas" model="res.country.district">
+			<field name="city_id" ref="city_new_id_5_atenas"/>
+			<field name="code">01</field>
+			<field name="name">ATENAS</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_2_jesus" model="res.country.district">
+			<field name="city_id" ref="city_new_id_5_atenas"/>
+			<field name="code">02</field>
+			<field name="name">JESÚS</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_3_mercedes" model="res.country.district">
+			<field name="city_id" ref="city_new_id_5_atenas"/>
+			<field name="code">03</field>
+			<field name="name">MERCEDES</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_4_sanisidro" model="res.country.district">
+			<field name="city_id" ref="city_new_id_5_atenas"/>
+			<field name="code">04</field>
+			<field name="name">SAN ISIDRO</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_5_concepcion" model="res.country.district">
+			<field name="city_id" ref="city_new_id_5_atenas"/>
+			<field name="code">05</field>
+			<field name="name">CONCEPCIÓN</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_6_sanjose" model="res.country.district">
+			<field name="city_id" ref="city_new_id_5_atenas"/>
+			<field name="code">06</field>
+			<field name="name">SAN JOSE</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_7_santaeulalia" model="res.country.district">
+			<field name="city_id" ref="city_new_id_5_atenas"/>
+			<field name="code">07</field>
+			<field name="name">SANTA EULALIA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_8_escobal" model="res.country.district">
+			<field name="city_id" ref="city_new_id_5_atenas"/>
+			<field name="code">08</field>
+			<field name="name">ESCOBAL</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_1_naranjo" model="res.country.district">
+			<field name="city_id" ref="city_new_id_6_naranjo"/>
+			<field name="code">01</field>
+			<field name="name">NARANJO</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_2_sanmiguel" model="res.country.district">
+			<field name="city_id" ref="city_new_id_6_naranjo"/>
+			<field name="code">02</field>
+			<field name="name">SAN MIGUEL</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_3_sanjose" model="res.country.district">
+			<field name="city_id" ref="city_new_id_6_naranjo"/>
+			<field name="code">03</field>
+			<field name="name">SAN JOSÉ</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_4_cirrisur" model="res.country.district">
+			<field name="city_id" ref="city_new_id_6_naranjo"/>
+			<field name="code">04</field>
+			<field name="name">CIRRÍ SUR</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_5_sanjeronimo" model="res.country.district">
+			<field name="city_id" ref="city_new_id_6_naranjo"/>
+			<field name="code">05</field>
+			<field name="name">SAN JERÓNIMO</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_6_sanjuan" model="res.country.district">
+			<field name="city_id" ref="city_new_id_6_naranjo"/>
+			<field name="code">06</field>
+			<field name="name">SAN JUAN</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_7_elrosario" model="res.country.district">
+			<field name="city_id" ref="city_new_id_6_naranjo"/>
+			<field name="code">07</field>
+			<field name="name">EL ROSARIO</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_8_palmitos" model="res.country.district">
+			<field name="city_id" ref="city_new_id_6_naranjo"/>
+			<field name="code">08</field>
+			<field name="name">PALMITOS</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_1_palmares" model="res.country.district">
+			<field name="city_id" ref="city_new_id_7_palmares"/>
+			<field name="code">01</field>
+			<field name="name">PALMARES</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_2_zaragoza" model="res.country.district">
+			<field name="city_id" ref="city_new_id_7_palmares"/>
+			<field name="code">02</field>
+			<field name="name">ZARAGOZA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_3_buenosaires" model="res.country.district">
+			<field name="city_id" ref="city_new_id_7_palmares"/>
+			<field name="code">03</field>
+			<field name="name">BUENOS AIRES</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_4_santiago" model="res.country.district">
+			<field name="city_id" ref="city_new_id_7_palmares"/>
+			<field name="code">04</field>
+			<field name="name">SANTIAGO</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_5_candelaria" model="res.country.district">
+			<field name="city_id" ref="city_new_id_7_palmares"/>
+			<field name="code">05</field>
+			<field name="name">CANDELARIA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_6_esquipulas" model="res.country.district">
+			<field name="city_id" ref="city_new_id_7_palmares"/>
+			<field name="code">06</field>
+			<field name="name">ESQUÍPULAS</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_7_lagranja" model="res.country.district">
+			<field name="city_id" ref="city_new_id_7_palmares"/>
+			<field name="code">07</field>
+			<field name="name">LA GRANJA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_1_sanpedro" model="res.country.district">
+			<field name="city_id" ref="city_new_id_8_poas"/>
+			<field name="code">01</field>
+			<field name="name">SAN PEDRO</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_2_sanjuan" model="res.country.district">
+			<field name="city_id" ref="city_new_id_8_poas"/>
+			<field name="code">02</field>
+			<field name="name">SAN JUAN</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_3_sanrafael" model="res.country.district">
+			<field name="city_id" ref="city_new_id_8_poas"/>
+			<field name="code">03</field>
+			<field name="name">SAN RAFAEL</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_4_carrillos" model="res.country.district">
+			<field name="city_id" ref="city_new_id_8_poas"/>
+			<field name="code">04</field>
+			<field name="name">CARRILLOS</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_5_sabanaredonda" model="res.country.district">
+			<field name="city_id" ref="city_new_id_8_poas"/>
+			<field name="code">05</field>
+			<field name="name">SABANA REDONDA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_1_orotina" model="res.country.district">
+			<field name="city_id" ref="city_new_id_9_orotina"/>
+			<field name="code">01</field>
+			<field name="name">OROTINA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_2_elmastate" model="res.country.district">
+			<field name="city_id" ref="city_new_id_9_orotina"/>
+			<field name="code">02</field>
+			<field name="name">EL MASTATE</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_3_haciendavieja" model="res.country.district">
+			<field name="city_id" ref="city_new_id_9_orotina"/>
+			<field name="code">03</field>
+			<field name="name">HACIENDA VIEJA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_4_coyolar" model="res.country.district">
+			<field name="city_id" ref="city_new_id_9_orotina"/>
+			<field name="code">04</field>
+			<field name="name">COYOLAR</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_5_laceiba" model="res.country.district">
+			<field name="city_id" ref="city_new_id_9_orotina"/>
+			<field name="code">05</field>
+			<field name="name">LA CEIBA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_1_quesada" model="res.country.district">
+			<field name="city_id" ref="city_new_id_10_sancarlos"/>
+			<field name="code">01</field>
+			<field name="name">QUESADA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_2_florencia" model="res.country.district">
+			<field name="city_id" ref="city_new_id_10_sancarlos"/>
+			<field name="code">02</field>
+			<field name="name">FLORENCIA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_3_buenavista" model="res.country.district">
+			<field name="city_id" ref="city_new_id_10_sancarlos"/>
+			<field name="code">03</field>
+			<field name="name">BUENAVISTA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_4_aguaszarcas" model="res.country.district">
+			<field name="city_id" ref="city_new_id_10_sancarlos"/>
+			<field name="code">04</field>
+			<field name="name">AGUAS ZARCAS</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_5_venecia" model="res.country.district">
+			<field name="city_id" ref="city_new_id_10_sancarlos"/>
+			<field name="code">05</field>
+			<field name="name">VENECIA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_6_pital" model="res.country.district">
+			<field name="city_id" ref="city_new_id_10_sancarlos"/>
+			<field name="code">06</field>
+			<field name="name">PITAL</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_7_lafortuna" model="res.country.district">
+			<field name="city_id" ref="city_new_id_10_sancarlos"/>
+			<field name="code">07</field>
+			<field name="name">LA FORTUNA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_8_latigra" model="res.country.district">
+			<field name="city_id" ref="city_new_id_10_sancarlos"/>
+			<field name="code">08</field>
+			<field name="name">LA TIGRA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_9_lapalmera" model="res.country.district">
+			<field name="city_id" ref="city_new_id_10_sancarlos"/>
+			<field name="code">09</field>
+			<field name="name">LA PALMERA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_10_venado" model="res.country.district">
+			<field name="city_id" ref="city_new_id_10_sancarlos"/>
+			<field name="code">10</field>
+			<field name="name">VENADO</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_11_cutris" model="res.country.district">
+			<field name="city_id" ref="city_new_id_10_sancarlos"/>
+			<field name="code">11</field>
+			<field name="name">CUTRIS</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_12_monterrey" model="res.country.district">
+			<field name="city_id" ref="city_new_id_10_sancarlos"/>
+			<field name="code">12</field>
+			<field name="name">MONTERREY</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_13_pocosol" model="res.country.district">
+			<field name="city_id" ref="city_new_id_10_sancarlos"/>
+			<field name="code">13</field>
+			<field name="name">POCOSOL</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_1_zarcero" model="res.country.district">
+			<field name="city_id" ref="city_new_id_11_zarcero"/>
+			<field name="code">01</field>
+			<field name="name">ZARCERO</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_2_laguna" model="res.country.district">
+			<field name="city_id" ref="city_new_id_11_zarcero"/>
+			<field name="code">02</field>
+			<field name="name">LAGUNA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_4_guadalupe" model="res.country.district">
+			<field name="city_id" ref="city_new_id_11_zarcero"/>
+			<field name="code">04</field>
+			<field name="name">GUADALUPE</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_5_palmira" model="res.country.district">
+			<field name="city_id" ref="city_new_id_11_zarcero"/>
+			<field name="code">05</field>
+			<field name="name">PALMIRA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_6_zapote" model="res.country.district">
+			<field name="city_id" ref="city_new_id_11_zarcero"/>
+			<field name="code">06</field>
+			<field name="name">ZAPOTE</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_7_brisas" model="res.country.district">
+			<field name="city_id" ref="city_new_id_11_zarcero"/>
+			<field name="code">07</field>
+			<field name="name">BRISAS</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_1_sarchinorte" model="res.country.district">
+			<field name="city_id" ref="city_new_id_12_valverdevega"/>
+			<field name="code">01</field>
+			<field name="name">SARCHÍ NORTE</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_2_sarchisur" model="res.country.district">
+			<field name="city_id" ref="city_new_id_12_valverdevega"/>
+			<field name="code">02</field>
+			<field name="name">SARCHÍ SUR</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_3_toroamarillo" model="res.country.district">
+			<field name="city_id" ref="city_new_id_12_valverdevega"/>
+			<field name="code">03</field>
+			<field name="name">TORO AMARILLO</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_4_sanpedro" model="res.country.district">
+			<field name="city_id" ref="city_new_id_12_valverdevega"/>
+			<field name="code">04</field>
+			<field name="name">SAN PEDRO</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_5_rodriguez" model="res.country.district">
+			<field name="city_id" ref="city_new_id_12_valverdevega"/>
+			<field name="code">05</field>
+			<field name="name">RODRÍGUEZ</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_1_upala" model="res.country.district">
+			<field name="city_id" ref="city_new_id_13_upala"/>
+			<field name="code">01</field>
+			<field name="name">UPALA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_2_aguasclaras" model="res.country.district">
+			<field name="city_id" ref="city_new_id_13_upala"/>
+			<field name="code">02</field>
+			<field name="name">AGUAS CLARAS</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_3_sanjoseopizote" model="res.country.district">
+			<field name="city_id" ref="city_new_id_13_upala"/>
+			<field name="code">03</field>
+			<field name="name">SAN JOSÉ o PIZOTE</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_4_bijagua" model="res.country.district">
+			<field name="city_id" ref="city_new_id_13_upala"/>
+			<field name="code">04</field>
+			<field name="name">BIJAGUA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_5_delicias" model="res.country.district">
+			<field name="city_id" ref="city_new_id_13_upala"/>
+			<field name="code">05</field>
+			<field name="name">DELICIAS</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_6_dosrios" model="res.country.district">
+			<field name="city_id" ref="city_new_id_13_upala"/>
+			<field name="code">06</field>
+			<field name="name">DOS RÍOS</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_7_yolillal" model="res.country.district">
+			<field name="city_id" ref="city_new_id_13_upala"/>
+			<field name="code">07</field>
+			<field name="name">YOLILLAL</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_8_canalete" model="res.country.district">
+			<field name="city_id" ref="city_new_id_13_upala"/>
+			<field name="code">08</field>
+			<field name="name">CANALETE</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_1_loschiles" model="res.country.district">
+			<field name="city_id" ref="city_new_id_14_loschiles"/>
+			<field name="code">01</field>
+			<field name="name">LOS CHILES</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_2_canonegro" model="res.country.district">
+			<field name="city_id" ref="city_new_id_14_loschiles"/>
+			<field name="code">02</field>
+			<field name="name">CAÑO NEGRO</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_3_elamparo" model="res.country.district">
+			<field name="city_id" ref="city_new_id_14_loschiles"/>
+			<field name="code">03</field>
+			<field name="name">EL AMPARO</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_4_sanjorge" model="res.country.district">
+			<field name="city_id" ref="city_new_id_14_loschiles"/>
+			<field name="code">04</field>
+			<field name="name">SAN JORGE</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_2_buenavista" model="res.country.district">
+			<field name="city_id" ref="city_new_id_15_guatuso"/>
+			<field name="code">02</field>
+			<field name="name">BUENAVISTA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_3_cote" model="res.country.district">
+			<field name="city_id" ref="city_new_id_15_guatuso"/>
+			<field name="code">03</field>
+			<field name="name">COTE</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_4_katira" model="res.country.district">
+			<field name="city_id" ref="city_new_id_15_guatuso"/>
+			<field name="code">04</field>
+			<field name="name">KATIRA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_1_oriental" model="res.country.district">
+			<field name="city_id" ref="city_new_id_1_cartago"/>
+			<field name="code">01</field>
+			<field name="name">ORIENTAL</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_2_occidental" model="res.country.district">
+			<field name="city_id" ref="city_new_id_1_cartago"/>
+			<field name="code">02</field>
+			<field name="name">OCCIDENTAL</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_3_carmen" model="res.country.district">
+			<field name="city_id" ref="city_new_id_1_cartago"/>
+			<field name="code">03</field>
+			<field name="name">CARMEN</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_4_sannicolas" model="res.country.district">
+			<field name="city_id" ref="city_new_id_1_cartago"/>
+			<field name="code">04</field>
+			<field name="name">SAN NICOLÁS</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_5_aguacalienteosanfrancisco" model="res.country.district">
+			<field name="city_id" ref="city_new_id_1_cartago"/>
+			<field name="code">05</field>
+			<field name="name">AGUACALIENTE o SAN FRANCISCO</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_6_guadalupeoarenilla" model="res.country.district">
+			<field name="city_id" ref="city_new_id_1_cartago"/>
+			<field name="code">06</field>
+			<field name="name">GUADALUPE o ARENILLA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_7_corralillo" model="res.country.district">
+			<field name="city_id" ref="city_new_id_1_cartago"/>
+			<field name="code">07</field>
+			<field name="name">CORRALILLO</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_8_tierrablanca" model="res.country.district">
+			<field name="city_id" ref="city_new_id_1_cartago"/>
+			<field name="code">08</field>
+			<field name="name">TIERRA BLANCA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_9_dulcenombre" model="res.country.district">
+			<field name="city_id" ref="city_new_id_1_cartago"/>
+			<field name="code">09</field>
+			<field name="name">DULCE NOMBRE</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_10_llanogrande" model="res.country.district">
+			<field name="city_id" ref="city_new_id_1_cartago"/>
+			<field name="code">10</field>
+			<field name="name">LLANO GRANDE</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_11_quebradilla" model="res.country.district">
+			<field name="city_id" ref="city_new_id_1_cartago"/>
+			<field name="code">11</field>
+			<field name="name">QUEBRADILLA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_1_paraiso" model="res.country.district">
+			<field name="city_id" ref="city_new_id_2_paraiso"/>
+			<field name="code">01</field>
+			<field name="name">PARAÍSO</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_2_santiago" model="res.country.district">
+			<field name="city_id" ref="city_new_id_2_paraiso"/>
+			<field name="code">02</field>
+			<field name="name">SANTIAGO</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_3_orosi" model="res.country.district">
+			<field name="city_id" ref="city_new_id_2_paraiso"/>
+			<field name="code">03</field>
+			<field name="name">OROSI</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_4_cachi" model="res.country.district">
+			<field name="city_id" ref="city_new_id_2_paraiso"/>
+			<field name="code">04</field>
+			<field name="name">CACHÍ</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_5_llanosdesantalucia" model="res.country.district">
+			<field name="city_id" ref="city_new_id_2_paraiso"/>
+			<field name="code">05</field>
+			<field name="name">LLANOS DE SANTA LUCÍA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_1_tresrios" model="res.country.district">
+			<field name="city_id" ref="city_new_id_3_launion"/>
+			<field name="code">01</field>
+			<field name="name">TRES RÍOS</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_2_sandiego" model="res.country.district">
+			<field name="city_id" ref="city_new_id_3_launion"/>
+			<field name="code">02</field>
+			<field name="name">SAN DIEGO</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_3_sanjuan" model="res.country.district">
+			<field name="city_id" ref="city_new_id_3_launion"/>
+			<field name="code">03</field>
+			<field name="name">SAN JUAN</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_4_sanrafael" model="res.country.district">
+			<field name="city_id" ref="city_new_id_3_launion"/>
+			<field name="code">04</field>
+			<field name="name">SAN RAFAEL</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_5_concepcion" model="res.country.district">
+			<field name="city_id" ref="city_new_id_3_launion"/>
+			<field name="code">05</field>
+			<field name="name">CONCEPCIÓN</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_6_dulcenombre" model="res.country.district">
+			<field name="city_id" ref="city_new_id_3_launion"/>
+			<field name="code">06</field>
+			<field name="name">DULCE NOMBRE</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_7_sanramon" model="res.country.district">
+			<field name="city_id" ref="city_new_id_3_launion"/>
+			<field name="code">07</field>
+			<field name="name">SAN RAMÓN</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_8_rioazul" model="res.country.district">
+			<field name="city_id" ref="city_new_id_3_launion"/>
+			<field name="code">08</field>
+			<field name="name">RÍO AZUL</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_1_juanvinas" model="res.country.district">
+			<field name="city_id" ref="city_new_id_4_jimenez"/>
+			<field name="code">01</field>
+			<field name="name">JUAN VIÑAS</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_2_tucurrique" model="res.country.district">
+			<field name="city_id" ref="city_new_id_4_jimenez"/>
+			<field name="code">02</field>
+			<field name="name">TUCURRIQUE</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_3_pejibaye" model="res.country.district">
+			<field name="city_id" ref="city_new_id_4_jimenez"/>
+			<field name="code">03</field>
+			<field name="name">PEJIBAYE</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_1_turrialba" model="res.country.district">
+			<field name="city_id" ref="city_new_id_5_turrialba"/>
+			<field name="code">01</field>
+			<field name="name">TURRIALBA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_2_lasuiza" model="res.country.district">
+			<field name="city_id" ref="city_new_id_5_turrialba"/>
+			<field name="code">02</field>
+			<field name="name">LA SUIZA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_3_peralta" model="res.country.district">
+			<field name="city_id" ref="city_new_id_5_turrialba"/>
+			<field name="code">03</field>
+			<field name="name">PERALTA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_4_santacruz" model="res.country.district">
+			<field name="city_id" ref="city_new_id_5_turrialba"/>
+			<field name="code">04</field>
+			<field name="name">SANTA CRUZ</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_5_santateresita" model="res.country.district">
+			<field name="city_id" ref="city_new_id_5_turrialba"/>
+			<field name="code">05</field>
+			<field name="name">SANTA TERESITA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_6_pavones" model="res.country.district">
+			<field name="city_id" ref="city_new_id_5_turrialba"/>
+			<field name="code">06</field>
+			<field name="name">PAVONES</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_7_tuis" model="res.country.district">
+			<field name="city_id" ref="city_new_id_5_turrialba"/>
+			<field name="code">07</field>
+			<field name="name">TUIS</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_8_tayutic" model="res.country.district">
+			<field name="city_id" ref="city_new_id_5_turrialba"/>
+			<field name="code">08</field>
+			<field name="name">TAYUTIC</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_9_santarosa" model="res.country.district">
+			<field name="city_id" ref="city_new_id_5_turrialba"/>
+			<field name="code">09</field>
+			<field name="name">SANTA ROSA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_10_tresequis" model="res.country.district">
+			<field name="city_id" ref="city_new_id_5_turrialba"/>
+			<field name="code">10</field>
+			<field name="name">TRES EQUIS</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_11_laisabel" model="res.country.district">
+			<field name="city_id" ref="city_new_id_5_turrialba"/>
+			<field name="code">11</field>
+			<field name="name">LA ISABEL</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_12_chirripo" model="res.country.district">
+			<field name="city_id" ref="city_new_id_5_turrialba"/>
+			<field name="code">12</field>
+			<field name="name">CHIRRIPÓ</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_1_pacayas" model="res.country.district">
+			<field name="city_id" ref="city_new_id_6_alvarado"/>
+			<field name="code">01</field>
+			<field name="name">PACAYAS</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_2_cervantes" model="res.country.district">
+			<field name="city_id" ref="city_new_id_6_alvarado"/>
+			<field name="code">02</field>
+			<field name="name">CERVANTES</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_3_capellades" model="res.country.district">
+			<field name="city_id" ref="city_new_id_6_alvarado"/>
+			<field name="code">03</field>
+			<field name="name">CAPELLADES</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_1_sanrafael" model="res.country.district">
+			<field name="city_id" ref="city_new_id_7_oreamuno"/>
+			<field name="code">01</field>
+			<field name="name">SAN RAFAEL</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_2_cot" model="res.country.district">
+			<field name="city_id" ref="city_new_id_7_oreamuno"/>
+			<field name="code">02</field>
+			<field name="name">COT</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_3_potrerocerrado" model="res.country.district">
+			<field name="city_id" ref="city_new_id_7_oreamuno"/>
+			<field name="code">03</field>
+			<field name="name">POTRERO CERRADO</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_4_cipreses" model="res.country.district">
+			<field name="city_id" ref="city_new_id_7_oreamuno"/>
+			<field name="code">04</field>
+			<field name="name">CIPRESES</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_5_santarosa" model="res.country.district">
+			<field name="city_id" ref="city_new_id_7_oreamuno"/>
+			<field name="code">05</field>
+			<field name="name">SANTA ROSA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_1_eltejar" model="res.country.district">
+			<field name="city_id" ref="city_new_id_8_elguarco"/>
+			<field name="code">01</field>
+			<field name="name">EL TEJAR</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_2_sanisidro" model="res.country.district">
+			<field name="city_id" ref="city_new_id_8_elguarco"/>
+			<field name="code">02</field>
+			<field name="name">SAN ISIDRO</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_3_tobosi" model="res.country.district">
+			<field name="city_id" ref="city_new_id_8_elguarco"/>
+			<field name="code">03</field>
+			<field name="name">TOBOSI</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_4_patiodeagua" model="res.country.district">
+			<field name="city_id" ref="city_new_id_8_elguarco"/>
+			<field name="code">04</field>
+			<field name="name">PATIO DE AGUA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_1_heredia" model="res.country.district">
+			<field name="city_id" ref="city_new_id_1_heredia"/>
+			<field name="code">01</field>
+			<field name="name">HEREDIA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_2_mercedes" model="res.country.district">
+			<field name="city_id" ref="city_new_id_1_heredia"/>
+			<field name="code">02</field>
+			<field name="name">MERCEDES</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_3_sanfrancisco" model="res.country.district">
+			<field name="city_id" ref="city_new_id_1_heredia"/>
+			<field name="code">03</field>
+			<field name="name">SAN FRANCISCO</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_4_ulloa" model="res.country.district">
+			<field name="city_id" ref="city_new_id_1_heredia"/>
+			<field name="code">04</field>
+			<field name="name">ULLOA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_5_varablanca" model="res.country.district">
+			<field name="city_id" ref="city_new_id_1_heredia"/>
+			<field name="code">05</field>
+			<field name="name">VARABLANCA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_1_barva" model="res.country.district">
+			<field name="city_id" ref="city_new_id_2_barva"/>
+			<field name="code">01</field>
+			<field name="name">BARVA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_2_sanpedro" model="res.country.district">
+			<field name="city_id" ref="city_new_id_2_barva"/>
+			<field name="code">02</field>
+			<field name="name">SAN PEDRO</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_3_sanpablo" model="res.country.district">
+			<field name="city_id" ref="city_new_id_2_barva"/>
+			<field name="code">03</field>
+			<field name="name">SAN PABLO</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_4_sanroque" model="res.country.district">
+			<field name="city_id" ref="city_new_id_2_barva"/>
+			<field name="code">04</field>
+			<field name="name">SAN ROQUE</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_5_santalucia" model="res.country.district">
+			<field name="city_id" ref="city_new_id_2_barva"/>
+			<field name="code">05</field>
+			<field name="name">SANTA LUCÍA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_6_sanjosedelamontana" model="res.country.district">
+			<field name="city_id" ref="city_new_id_2_barva"/>
+			<field name="code">06</field>
+			<field name="name">SAN JOSÉ DE LA MONTAÑA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_2_sanvicente" model="res.country.district">
+			<field name="city_id" ref="city_new_id_3_santodomingo"/>
+			<field name="code">02</field>
+			<field name="name">SAN VICENTE</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_3_sanmiguel" model="res.country.district">
+			<field name="city_id" ref="city_new_id_3_santodomingo"/>
+			<field name="code">03</field>
+			<field name="name">SAN MIGUEL</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_4_paracito" model="res.country.district">
+			<field name="city_id" ref="city_new_id_3_santodomingo"/>
+			<field name="code">04</field>
+			<field name="name">PARACITO</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_5_santotomas" model="res.country.district">
+			<field name="city_id" ref="city_new_id_3_santodomingo"/>
+			<field name="code">05</field>
+			<field name="name">SANTO TOMÁS</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_6_santarosa" model="res.country.district">
+			<field name="city_id" ref="city_new_id_3_santodomingo"/>
+			<field name="code">06</field>
+			<field name="name">SANTA ROSA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_7_tures" model="res.country.district">
+			<field name="city_id" ref="city_new_id_3_santodomingo"/>
+			<field name="code">07</field>
+			<field name="name">TURES</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_8_para" model="res.country.district">
+			<field name="city_id" ref="city_new_id_3_santodomingo"/>
+			<field name="code">08</field>
+			<field name="name">PARÁ</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_1_santabarbara" model="res.country.district">
+			<field name="city_id" ref="city_new_id_4_santabarbara"/>
+			<field name="code">01</field>
+			<field name="name">SANTA BÁRBARA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_2_sanpedro" model="res.country.district">
+			<field name="city_id" ref="city_new_id_4_santabarbara"/>
+			<field name="code">02</field>
+			<field name="name">SAN PEDRO</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_3_sanjuan" model="res.country.district">
+			<field name="city_id" ref="city_new_id_4_santabarbara"/>
+			<field name="code">03</field>
+			<field name="name">SAN JUAN</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_4_jesus" model="res.country.district">
+			<field name="city_id" ref="city_new_id_4_santabarbara"/>
+			<field name="code">04</field>
+			<field name="name">JESÚS</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_5_santodomingo" model="res.country.district">
+			<field name="city_id" ref="city_new_id_4_santabarbara"/>
+			<field name="code">05</field>
+			<field name="name">SANTO DOMINGO</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_6_puraba" model="res.country.district">
+			<field name="city_id" ref="city_new_id_4_santabarbara"/>
+			<field name="code">06</field>
+			<field name="name">PURABÁ</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_1_sanrafael" model="res.country.district">
+			<field name="city_id" ref="city_new_id_5_sanrafael"/>
+			<field name="code">01</field>
+			<field name="name">SAN RAFAEL</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_2_sanjosecito" model="res.country.district">
+			<field name="city_id" ref="city_new_id_5_sanrafael"/>
+			<field name="code">02</field>
+			<field name="name">SAN JOSECITO</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_3_santiago" model="res.country.district">
+			<field name="city_id" ref="city_new_id_5_sanrafael"/>
+			<field name="code">03</field>
+			<field name="name">SANTIAGO</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_4_angeles" model="res.country.district">
+			<field name="city_id" ref="city_new_id_5_sanrafael"/>
+			<field name="code">04</field>
+			<field name="name">ÁNGELES</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_5_concepcion" model="res.country.district">
+			<field name="city_id" ref="city_new_id_5_sanrafael"/>
+			<field name="code">05</field>
+			<field name="name">CONCEPCIÓN</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_1_sanisidro" model="res.country.district">
+			<field name="city_id" ref="city_new_id_6_sanisidro"/>
+			<field name="code">01</field>
+			<field name="name">SAN ISIDRO</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_2_sanjose" model="res.country.district">
+			<field name="city_id" ref="city_new_id_6_sanisidro"/>
+			<field name="code">02</field>
+			<field name="name">SAN JOSÉ</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_3_concepcion" model="res.country.district">
+			<field name="city_id" ref="city_new_id_6_sanisidro"/>
+			<field name="code">03</field>
+			<field name="name">CONCEPCIÓN</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_4_sanfrancisco" model="res.country.district">
+			<field name="city_id" ref="city_new_id_6_sanisidro"/>
+			<field name="code">04</field>
+			<field name="name">SAN FRANCISCO</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_1_sanantonio" model="res.country.district">
+			<field name="city_id" ref="city_new_id_7_belen"/>
+			<field name="code">01</field>
+			<field name="name">SAN ANTONIO</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_2_laribera" model="res.country.district">
+			<field name="city_id" ref="city_new_id_7_belen"/>
+			<field name="code">02</field>
+			<field name="name">LA RIBERA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_3_laasuncion" model="res.country.district">
+			<field name="city_id" ref="city_new_id_7_belen"/>
+			<field name="code">03</field>
+			<field name="name">LA ASUNCIÓN</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_1_sanjoaquin" model="res.country.district">
+			<field name="city_id" ref="city_new_id_8_flores"/>
+			<field name="code">01</field>
+			<field name="name">SAN JOAQUÍN</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_2_barrantes" model="res.country.district">
+			<field name="city_id" ref="city_new_id_8_flores"/>
+			<field name="code">02</field>
+			<field name="name">BARRANTES</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_3_llorente" model="res.country.district">
+			<field name="city_id" ref="city_new_id_8_flores"/>
+			<field name="code">03</field>
+			<field name="name">LLORENTE</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_1_sanpablo" model="res.country.district">
+			<field name="city_id" ref="city_new_id_9_sanpablo"/>
+			<field name="code">01</field>
+			<field name="name">SAN PABLO</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_1_puertoviejo" model="res.country.district">
+			<field name="city_id" ref="city_new_id_10_sarapiqui"/>
+			<field name="code">01</field>
+			<field name="name">PUERTO VIEJO</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_2_lavirgen" model="res.country.district">
+			<field name="city_id" ref="city_new_id_10_sarapiqui"/>
+			<field name="code">02</field>
+			<field name="name">LA VIRGEN</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_3_lashorquetas" model="res.country.district">
+			<field name="city_id" ref="city_new_id_10_sarapiqui"/>
+			<field name="code">03</field>
+			<field name="name">LAS HORQUETAS</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_4_llanurasdelgaspar" model="res.country.district">
+			<field name="city_id" ref="city_new_id_10_sarapiqui"/>
+			<field name="code">04</field>
+			<field name="name">LLANURAS DEL GASPAR</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_5_curena" model="res.country.district">
+			<field name="city_id" ref="city_new_id_10_sarapiqui"/>
+			<field name="code">05</field>
+			<field name="name">CUREÑA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_1_liberia" model="res.country.district">
+			<field name="city_id" ref="city_new_id_1_liberia"/>
+			<field name="code">01</field>
+			<field name="name">LIBERIA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_2_canasdulces" model="res.country.district">
+			<field name="city_id" ref="city_new_id_1_liberia"/>
+			<field name="code">02</field>
+			<field name="name">CAÑAS DULCES</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_3_mayorga" model="res.country.district">
+			<field name="city_id" ref="city_new_id_1_liberia"/>
+			<field name="code">03</field>
+			<field name="name">MAYORGA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_4_nacascolo" model="res.country.district">
+			<field name="city_id" ref="city_new_id_1_liberia"/>
+			<field name="code">04</field>
+			<field name="name">NACASCOLO</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_5_curubande" model="res.country.district">
+			<field name="city_id" ref="city_new_id_1_liberia"/>
+			<field name="code">05</field>
+			<field name="name">CURUBANDÉ</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_1_nicoya" model="res.country.district">
+			<field name="city_id" ref="city_new_id_2_nicoya"/>
+			<field name="code">01</field>
+			<field name="name">NICOYA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_2_mansion" model="res.country.district">
+			<field name="city_id" ref="city_new_id_2_nicoya"/>
+			<field name="code">02</field>
+			<field name="name">MANSIÓN</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_3_sanantonio" model="res.country.district">
+			<field name="city_id" ref="city_new_id_2_nicoya"/>
+			<field name="code">03</field>
+			<field name="name">SAN ANTONIO</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_4_quebradahonda" model="res.country.district">
+			<field name="city_id" ref="city_new_id_2_nicoya"/>
+			<field name="code">04</field>
+			<field name="name">QUEBRADA HONDA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_5_samara" model="res.country.district">
+			<field name="city_id" ref="city_new_id_2_nicoya"/>
+			<field name="code">05</field>
+			<field name="name">SÁMARA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_6_nosara" model="res.country.district">
+			<field name="city_id" ref="city_new_id_2_nicoya"/>
+			<field name="code">06</field>
+			<field name="name">NOSARA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_7_belendenosarita" model="res.country.district">
+			<field name="city_id" ref="city_new_id_2_nicoya"/>
+			<field name="code">07</field>
+			<field name="name">BELÉN DE NOSARITA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_1_santacruz" model="res.country.district">
+			<field name="city_id" ref="city_new_id_3_santacruz"/>
+			<field name="code">01</field>
+			<field name="name">SANTA CRUZ</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_2_bolson" model="res.country.district">
+			<field name="city_id" ref="city_new_id_3_santacruz"/>
+			<field name="code">02</field>
+			<field name="name">BOLSÓN</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_3_veintisietedeabril" model="res.country.district">
+			<field name="city_id" ref="city_new_id_3_santacruz"/>
+			<field name="code">03</field>
+			<field name="name">VEINTISIETE DE ABRIL</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_4_tempate" model="res.country.district">
+			<field name="city_id" ref="city_new_id_3_santacruz"/>
+			<field name="code">04</field>
+			<field name="name">TEMPATE</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_5_cartagena" model="res.country.district">
+			<field name="city_id" ref="city_new_id_3_santacruz"/>
+			<field name="code">05</field>
+			<field name="name">CARTAGENA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_6_cuajiniquil" model="res.country.district">
+			<field name="city_id" ref="city_new_id_3_santacruz"/>
+			<field name="code">06</field>
+			<field name="name">CUAJINIQUIL</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_7_diria" model="res.country.district">
+			<field name="city_id" ref="city_new_id_3_santacruz"/>
+			<field name="code">07</field>
+			<field name="name">DIRIÁ</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_8_cabovelas" model="res.country.district">
+			<field name="city_id" ref="city_new_id_3_santacruz"/>
+			<field name="code">08</field>
+			<field name="name">CABO VELAS</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_9_tamarindo" model="res.country.district">
+			<field name="city_id" ref="city_new_id_3_santacruz"/>
+			<field name="code">09</field>
+			<field name="name">TAMARINDO</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_1_bagaces" model="res.country.district">
+			<field name="city_id" ref="city_new_id_4_bagaces"/>
+			<field name="code">01</field>
+			<field name="name">BAGACES</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_2_lafortuna" model="res.country.district">
+			<field name="city_id" ref="city_new_id_4_bagaces"/>
+			<field name="code">02</field>
+			<field name="name">LA FORTUNA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_3_mogote" model="res.country.district">
+			<field name="city_id" ref="city_new_id_4_bagaces"/>
+			<field name="code">03</field>
+			<field name="name">MOGOTE</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_4_rionaranjo" model="res.country.district">
+			<field name="city_id" ref="city_new_id_4_bagaces"/>
+			<field name="code">04</field>
+			<field name="name">RÍO NARANJO</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_1_filadelfia" model="res.country.district">
+			<field name="city_id" ref="city_new_id_5_carrillo"/>
+			<field name="code">01</field>
+			<field name="name">FILADELFIA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_2_palmira" model="res.country.district">
+			<field name="city_id" ref="city_new_id_5_carrillo"/>
+			<field name="code">02</field>
+			<field name="name">PALMIRA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_3_sardinal" model="res.country.district">
+			<field name="city_id" ref="city_new_id_5_carrillo"/>
+			<field name="code">03</field>
+			<field name="name">SARDINAL</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_4_belen" model="res.country.district">
+			<field name="city_id" ref="city_new_id_5_carrillo"/>
+			<field name="code">04</field>
+			<field name="name">BELÉN</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_1_canas" model="res.country.district">
+			<field name="city_id" ref="city_new_id_6_canas"/>
+			<field name="code">01</field>
+			<field name="name">CAÑAS</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_2_palmira" model="res.country.district">
+			<field name="city_id" ref="city_new_id_6_canas"/>
+			<field name="code">02</field>
+			<field name="name">PALMIRA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_3_sanmiguel" model="res.country.district">
+			<field name="city_id" ref="city_new_id_6_canas"/>
+			<field name="code">03</field>
+			<field name="name">SAN MIGUEL</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_4_bebedero" model="res.country.district">
+			<field name="city_id" ref="city_new_id_6_canas"/>
+			<field name="code">04</field>
+			<field name="name">BEBEDERO</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_5_porozal" model="res.country.district">
+			<field name="city_id" ref="city_new_id_6_canas"/>
+			<field name="code">05</field>
+			<field name="name">POROZAL</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_1_lasjuntas" model="res.country.district">
+			<field name="city_id" ref="city_new_id_7_abangares"/>
+			<field name="code">01</field>
+			<field name="name">LAS JUNTAS</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_2_sierra" model="res.country.district">
+			<field name="city_id" ref="city_new_id_7_abangares"/>
+			<field name="code">02</field>
+			<field name="name">SIERRA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_3_sanjuan" model="res.country.district">
+			<field name="city_id" ref="city_new_id_7_abangares"/>
+			<field name="code">03</field>
+			<field name="name">SAN JUAN</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_4_colorado" model="res.country.district">
+			<field name="city_id" ref="city_new_id_7_abangares"/>
+			<field name="code">04</field>
+			<field name="name">COLORADO</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_1_tilaran" model="res.country.district">
+			<field name="city_id" ref="city_new_id_8_tilaran"/>
+			<field name="code">01</field>
+			<field name="name">TILARÁN</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_2_quebradagrande" model="res.country.district">
+			<field name="city_id" ref="city_new_id_8_tilaran"/>
+			<field name="code">02</field>
+			<field name="name">QUEBRADA GRANDE</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_3_tronadora" model="res.country.district">
+			<field name="city_id" ref="city_new_id_8_tilaran"/>
+			<field name="code">03</field>
+			<field name="name">TRONADORA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_4_santarosa" model="res.country.district">
+			<field name="city_id" ref="city_new_id_8_tilaran"/>
+			<field name="code">04</field>
+			<field name="name">SANTA ROSA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_5_libano" model="res.country.district">
+			<field name="city_id" ref="city_new_id_8_tilaran"/>
+			<field name="code">05</field>
+			<field name="name">LÍBANO</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_6_tierrasmorenas" model="res.country.district">
+			<field name="city_id" ref="city_new_id_8_tilaran"/>
+			<field name="code">06</field>
+			<field name="name">TIERRAS MORENAS</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_7_arenal" model="res.country.district">
+			<field name="city_id" ref="city_new_id_8_tilaran"/>
+			<field name="code">07</field>
+			<field name="name">ARENAL</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_1_carmona" model="res.country.district">
+			<field name="city_id" ref="city_new_id_9_nandayure"/>
+			<field name="code">01</field>
+			<field name="name">CARMONA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_2_santarita" model="res.country.district">
+			<field name="city_id" ref="city_new_id_9_nandayure"/>
+			<field name="code">02</field>
+			<field name="name">SANTA RITA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_3_zapotal" model="res.country.district">
+			<field name="city_id" ref="city_new_id_9_nandayure"/>
+			<field name="code">03</field>
+			<field name="name">ZAPOTAL</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_4_sanpablo" model="res.country.district">
+			<field name="city_id" ref="city_new_id_9_nandayure"/>
+			<field name="code">04</field>
+			<field name="name">SAN PABLO</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_5_porvenir" model="res.country.district">
+			<field name="city_id" ref="city_new_id_9_nandayure"/>
+			<field name="code">05</field>
+			<field name="name">PORVENIR</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_6_bejuco" model="res.country.district">
+			<field name="city_id" ref="city_new_id_9_nandayure"/>
+			<field name="code">06</field>
+			<field name="name">BEJUCO</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_1_lacruz" model="res.country.district">
+			<field name="city_id" ref="city_new_id_10_lacruz"/>
+			<field name="code">01</field>
+			<field name="name">LA CRUZ</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_2_santacecilia" model="res.country.district">
+			<field name="city_id" ref="city_new_id_10_lacruz"/>
+			<field name="code">02</field>
+			<field name="name">SANTA CECILIA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_3_lagarita" model="res.country.district">
+			<field name="city_id" ref="city_new_id_10_lacruz"/>
+			<field name="code">03</field>
+			<field name="name">LA GARITA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_4_santaelena" model="res.country.district">
+			<field name="city_id" ref="city_new_id_10_lacruz"/>
+			<field name="code">04</field>
+			<field name="name">SANTA ELENA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_1_hojancha" model="res.country.district">
+			<field name="city_id" ref="city_new_id_11_hojancha"/>
+			<field name="code">01</field>
+			<field name="name">HOJANCHA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_2_monteromo" model="res.country.district">
+			<field name="city_id" ref="city_new_id_11_hojancha"/>
+			<field name="code">02</field>
+			<field name="name">MONTE ROMO</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_3_puertocarrillo" model="res.country.district">
+			<field name="city_id" ref="city_new_id_11_hojancha"/>
+			<field name="code">03</field>
+			<field name="name">PUERTO CARRILLO</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_4_huacas" model="res.country.district">
+			<field name="city_id" ref="city_new_id_11_hojancha"/>
+			<field name="code">04</field>
+			<field name="name">HUACAS</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_1_puntarenas" model="res.country.district">
+			<field name="city_id" ref="city_new_id_1_puntarenas"/>
+			<field name="code">01</field>
+			<field name="name">PUNTARENAS</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_2_pitahaya" model="res.country.district">
+			<field name="city_id" ref="city_new_id_1_puntarenas"/>
+			<field name="code">02</field>
+			<field name="name">PITAHAYA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_3_chomes" model="res.country.district">
+			<field name="city_id" ref="city_new_id_1_puntarenas"/>
+			<field name="code">03</field>
+			<field name="name">CHOMES</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_4_lepanto" model="res.country.district">
+			<field name="city_id" ref="city_new_id_1_puntarenas"/>
+			<field name="code">04</field>
+			<field name="name">LEPANTO</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_5_paquera" model="res.country.district">
+			<field name="city_id" ref="city_new_id_1_puntarenas"/>
+			<field name="code">05</field>
+			<field name="name">PAQUERA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_6_manzanillo" model="res.country.district">
+			<field name="city_id" ref="city_new_id_1_puntarenas"/>
+			<field name="code">06</field>
+			<field name="name">MANZANILLO</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_7_guacimal" model="res.country.district">
+			<field name="city_id" ref="city_new_id_1_puntarenas"/>
+			<field name="code">07</field>
+			<field name="name">GUACIMAL</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_8_barranca" model="res.country.district">
+			<field name="city_id" ref="city_new_id_1_puntarenas"/>
+			<field name="code">08</field>
+			<field name="name">BARRANCA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_9_monteverde" model="res.country.district">
+			<field name="city_id" ref="city_new_id_1_puntarenas"/>
+			<field name="code">09</field>
+			<field name="name">MONTE VERDE</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_11_cobano" model="res.country.district">
+			<field name="city_id" ref="city_new_id_1_puntarenas"/>
+			<field name="code">11</field>
+			<field name="name">CÓBANO</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_12_chacarita" model="res.country.district">
+			<field name="city_id" ref="city_new_id_1_puntarenas"/>
+			<field name="code">12</field>
+			<field name="name">CHACARITA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_13_chira" model="res.country.district">
+			<field name="city_id" ref="city_new_id_1_puntarenas"/>
+			<field name="code">13</field>
+			<field name="name">CHIRA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_14_acapulco" model="res.country.district">
+			<field name="city_id" ref="city_new_id_1_puntarenas"/>
+			<field name="code">14</field>
+			<field name="name">ACAPULCO</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_15_elroble" model="res.country.district">
+			<field name="city_id" ref="city_new_id_1_puntarenas"/>
+			<field name="code">15</field>
+			<field name="name">EL ROBLE</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_16_arancibia" model="res.country.district">
+			<field name="city_id" ref="city_new_id_1_puntarenas"/>
+			<field name="code">16</field>
+			<field name="name">ARANCIBIA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_1_espiritusanto" model="res.country.district">
+			<field name="city_id" ref="city_new_id_2_esparza"/>
+			<field name="code">01</field>
+			<field name="name">ESPÍRITU SANTO</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_2_sanjuangrande" model="res.country.district">
+			<field name="city_id" ref="city_new_id_2_esparza"/>
+			<field name="code">02</field>
+			<field name="name">SAN JUAN GRANDE</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_3_macacona" model="res.country.district">
+			<field name="city_id" ref="city_new_id_2_esparza"/>
+			<field name="code">03</field>
+			<field name="name">MACACONA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_4_sanrafael" model="res.country.district">
+			<field name="city_id" ref="city_new_id_2_esparza"/>
+			<field name="code">04</field>
+			<field name="name">SAN RAFAEL</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_5_sanjeronimo" model="res.country.district">
+			<field name="city_id" ref="city_new_id_2_esparza"/>
+			<field name="code">05</field>
+			<field name="name">SAN JERÓNIMO</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_6_caldera" model="res.country.district">
+			<field name="city_id" ref="city_new_id_2_esparza"/>
+			<field name="code">06</field>
+			<field name="name">CALDERA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_1_buenosaires" model="res.country.district">
+			<field name="city_id" ref="city_new_id_3_buenosaires"/>
+			<field name="code">01</field>
+			<field name="name">BUENOS AIRES</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_2_volcan" model="res.country.district">
+			<field name="city_id" ref="city_new_id_3_buenosaires"/>
+			<field name="code">02</field>
+			<field name="name">VOLCÁN</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_3_potrerogrande" model="res.country.district">
+			<field name="city_id" ref="city_new_id_3_buenosaires"/>
+			<field name="code">03</field>
+			<field name="name">POTRERO GRANDE</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_4_boruca" model="res.country.district">
+			<field name="city_id" ref="city_new_id_3_buenosaires"/>
+			<field name="code">04</field>
+			<field name="name">BORUCA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_5_pilas" model="res.country.district">
+			<field name="city_id" ref="city_new_id_3_buenosaires"/>
+			<field name="code">05</field>
+			<field name="name">PILAS</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_6_colinas" model="res.country.district">
+			<field name="city_id" ref="city_new_id_3_buenosaires"/>
+			<field name="code">06</field>
+			<field name="name">COLINAS</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_7_changuena" model="res.country.district">
+			<field name="city_id" ref="city_new_id_3_buenosaires"/>
+			<field name="code">07</field>
+			<field name="name">CHÁNGUENA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_8_biolley" model="res.country.district">
+			<field name="city_id" ref="city_new_id_3_buenosaires"/>
+			<field name="code">08</field>
+			<field name="name">BIOLLEY</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_9_brunka" model="res.country.district">
+			<field name="city_id" ref="city_new_id_3_buenosaires"/>
+			<field name="code">09</field>
+			<field name="name">BRUNKA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_1_miramar" model="res.country.district">
+			<field name="city_id" ref="city_new_id_4_montesdeoro"/>
+			<field name="code">01</field>
+			<field name="name">MIRAMAR</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_2_launion" model="res.country.district">
+			<field name="city_id" ref="city_new_id_4_montesdeoro"/>
+			<field name="code">02</field>
+			<field name="name">LA UNIÓN</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_3_sanisidro" model="res.country.district">
+			<field name="city_id" ref="city_new_id_4_montesdeoro"/>
+			<field name="code">03</field>
+			<field name="name">SAN ISIDRO</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_1_puertocortes" model="res.country.district">
+			<field name="city_id" ref="city_new_id_5_osa"/>
+			<field name="code">01</field>
+			<field name="name">PUERTO CORTÉS</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_2_palmar" model="res.country.district">
+			<field name="city_id" ref="city_new_id_5_osa"/>
+			<field name="code">02</field>
+			<field name="name">PALMAR</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_3_sierpe" model="res.country.district">
+			<field name="city_id" ref="city_new_id_5_osa"/>
+			<field name="code">03</field>
+			<field name="name">SIERPE</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_4_bahiaballena" model="res.country.district">
+			<field name="city_id" ref="city_new_id_5_osa"/>
+			<field name="code">04</field>
+			<field name="name">BAHÍA BALLENA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_5_piedrasblancas" model="res.country.district">
+			<field name="city_id" ref="city_new_id_5_osa"/>
+			<field name="code">05</field>
+			<field name="name">PIEDRAS BLANCAS</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_6_bahiadrake" model="res.country.district">
+			<field name="city_id" ref="city_new_id_5_osa"/>
+			<field name="code">06</field>
+			<field name="name">BAHÍA DRAKE</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_1_quepos" model="res.country.district">
+			<field name="city_id" ref="city_new_id_6_aguirre"/>
+			<field name="code">01</field>
+			<field name="name">QUEPOS</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_2_savegre" model="res.country.district">
+			<field name="city_id" ref="city_new_id_6_aguirre"/>
+			<field name="code">02</field>
+			<field name="name">SAVEGRE</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_3_naranjito" model="res.country.district">
+			<field name="city_id" ref="city_new_id_6_aguirre"/>
+			<field name="code">03</field>
+			<field name="name">NARANJITO</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_1_golfito" model="res.country.district">
+			<field name="city_id" ref="city_new_id_7_golfito"/>
+			<field name="code">01</field>
+			<field name="name">GOLFITO</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_2_puertojimenez" model="res.country.district">
+			<field name="city_id" ref="city_new_id_7_golfito"/>
+			<field name="code">02</field>
+			<field name="name">PUERTO JIMÉNEZ</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_3_guaycara" model="res.country.district">
+			<field name="city_id" ref="city_new_id_7_golfito"/>
+			<field name="code">03</field>
+			<field name="name">GUAYCARÁ</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_4_pavon" model="res.country.district">
+			<field name="city_id" ref="city_new_id_7_golfito"/>
+			<field name="code">04</field>
+			<field name="name">PAVÓN</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_1_sanvito" model="res.country.district">
+			<field name="city_id" ref="city_new_id_8_cotobrus"/>
+			<field name="code">01</field>
+			<field name="name">SAN VITO</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_2_sabalito" model="res.country.district">
+			<field name="city_id" ref="city_new_id_8_cotobrus"/>
+			<field name="code">02</field>
+			<field name="name">SABALITO</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_3_aguabuena" model="res.country.district">
+			<field name="city_id" ref="city_new_id_8_cotobrus"/>
+			<field name="code">03</field>
+			<field name="name">AGUABUENA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_4_limoncito" model="res.country.district">
+			<field name="city_id" ref="city_new_id_8_cotobrus"/>
+			<field name="code">04</field>
+			<field name="name">LIMONCITO</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_5_pittier" model="res.country.district">
+			<field name="city_id" ref="city_new_id_8_cotobrus"/>
+			<field name="code">05</field>
+			<field name="name">PITTIER</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_6_gutierrezbraun" model="res.country.district">
+			<field name="city_id" ref="city_new_id_8_cotobrus"/>
+			<field name="code">06</field>
+			<field name="name">GUTIERREZ BRAUN</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_1_parrita" model="res.country.district">
+			<field name="city_id" ref="city_new_id_9_parrita"/>
+			<field name="code">01</field>
+			<field name="name">PARRITA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_1_corredor" model="res.country.district">
+			<field name="city_id" ref="city_new_id_10_corredores"/>
+			<field name="code">01</field>
+			<field name="name">CORREDOR</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_2_lacuesta" model="res.country.district">
+			<field name="city_id" ref="city_new_id_10_corredores"/>
+			<field name="code">02</field>
+			<field name="name">LA CUESTA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_3_canoas" model="res.country.district">
+			<field name="city_id" ref="city_new_id_10_corredores"/>
+			<field name="code">03</field>
+			<field name="name">CANOAS</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_4_laurel" model="res.country.district">
+			<field name="city_id" ref="city_new_id_10_corredores"/>
+			<field name="code">04</field>
+			<field name="name">LAUREL</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_1_jaco" model="res.country.district">
+			<field name="city_id" ref="city_new_id_11_garabito"/>
+			<field name="code">01</field>
+			<field name="name">JACÓ</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_2_tarcoles" model="res.country.district">
+			<field name="city_id" ref="city_new_id_11_garabito"/>
+			<field name="code">02</field>
+			<field name="name">TÁRCOLES</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_1_limon" model="res.country.district">
+			<field name="city_id" ref="city_new_id_1_limon"/>
+			<field name="code">01</field>
+			<field name="name">LIMÓN</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_2_vallelaestrella" model="res.country.district">
+			<field name="city_id" ref="city_new_id_1_limon"/>
+			<field name="code">02</field>
+			<field name="name">VALLE LA ESTRELLA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_4_matama" model="res.country.district">
+			<field name="city_id" ref="city_new_id_1_limon"/>
+			<field name="code">04</field>
+			<field name="name">MATAMA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_1_guapiles" model="res.country.district">
+			<field name="city_id" ref="city_new_id_2_pococi"/>
+			<field name="code">01</field>
+			<field name="name">GUÁPILES</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_2_jimenez" model="res.country.district">
+			<field name="city_id" ref="city_new_id_2_pococi"/>
+			<field name="code">02</field>
+			<field name="name">JIMÉNEZ</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_3_rita" model="res.country.district">
+			<field name="city_id" ref="city_new_id_2_pococi"/>
+			<field name="code">03</field>
+			<field name="name">RITA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_4_roxana" model="res.country.district">
+			<field name="city_id" ref="city_new_id_2_pococi"/>
+			<field name="code">04</field>
+			<field name="name">ROXANA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_5_cariari" model="res.country.district">
+			<field name="city_id" ref="city_new_id_2_pococi"/>
+			<field name="code">05</field>
+			<field name="name">CARIARI</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_6_colorado" model="res.country.district">
+			<field name="city_id" ref="city_new_id_2_pococi"/>
+			<field name="code">06</field>
+			<field name="name">COLORADO</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_7_lacolonia" model="res.country.district">
+			<field name="city_id" ref="city_new_id_2_pococi"/>
+			<field name="code">07</field>
+			<field name="name">LA COLONIA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_1_siquirres" model="res.country.district">
+			<field name="city_id" ref="city_new_id_3_siquirres"/>
+			<field name="code">01</field>
+			<field name="name">SIQUIRRES</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_2_pacuarito" model="res.country.district">
+			<field name="city_id" ref="city_new_id_3_siquirres"/>
+			<field name="code">02</field>
+			<field name="name">PACUARITO</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_3_florida" model="res.country.district">
+			<field name="city_id" ref="city_new_id_3_siquirres"/>
+			<field name="code">03</field>
+			<field name="name">FLORIDA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_4_germania" model="res.country.district">
+			<field name="city_id" ref="city_new_id_3_siquirres"/>
+			<field name="code">04</field>
+			<field name="name">GERMANIA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_5_elcairo" model="res.country.district">
+			<field name="city_id" ref="city_new_id_3_siquirres"/>
+			<field name="code">05</field>
+			<field name="name">EL CAIRO</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_6_alegria" model="res.country.district">
+			<field name="city_id" ref="city_new_id_3_siquirres"/>
+			<field name="code">06</field>
+			<field name="name">ALEGRÍA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_1_bratsi" model="res.country.district">
+			<field name="city_id" ref="city_new_id_4_talamanca"/>
+			<field name="code">01</field>
+			<field name="name">BRATSI</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_2_sixaola" model="res.country.district">
+			<field name="city_id" ref="city_new_id_4_talamanca"/>
+			<field name="code">02</field>
+			<field name="name">SIXAOLA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_3_cahuita" model="res.country.district">
+			<field name="city_id" ref="city_new_id_4_talamanca"/>
+			<field name="code">03</field>
+			<field name="name">CAHUITA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_4_telire" model="res.country.district">
+			<field name="city_id" ref="city_new_id_4_talamanca"/>
+			<field name="code">04</field>
+			<field name="name">TELIRE</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_1_matina" model="res.country.district">
+			<field name="city_id" ref="city_new_id_5_matina"/>
+			<field name="code">01</field>
+			<field name="name">MATINA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_2_batan" model="res.country.district">
+			<field name="city_id" ref="city_new_id_5_matina"/>
+			<field name="code">02</field>
+			<field name="name">BATÁN</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_3_carrandi" model="res.country.district">
+			<field name="city_id" ref="city_new_id_5_matina"/>
+			<field name="code">03</field>
+			<field name="name">CARRANDI</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_1_guacimo" model="res.country.district">
+			<field name="city_id" ref="city_new_id_6_guacimo"/>
+			<field name="code">01</field>
+			<field name="name">GUÁCIMO</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_2_mercedes" model="res.country.district">
+			<field name="city_id" ref="city_new_id_6_guacimo"/>
+			<field name="code">02</field>
+			<field name="name">MERCEDES</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_3_pocora" model="res.country.district">
+			<field name="city_id" ref="city_new_id_6_guacimo"/>
+			<field name="code">03</field>
+			<field name="name">POCORA</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_4_riojimenez" model="res.country.district">
+			<field name="city_id" ref="city_new_id_6_guacimo"/>
+			<field name="code">04</field>
+			<field name="name">RÍO JIMÉNEZ</field>
+		</record>
+		<record forcecreate="1" id="district_new_id_5_duacari" model="res.country.district">
+			<field name="city_id" ref="city_new_id_6_guacimo"/>
+			<field name="code">05</field>
+			<field name="name">DUACARÍ</field>
+		</record>
+	</data>
+</openerp>

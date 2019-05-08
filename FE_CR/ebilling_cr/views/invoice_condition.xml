@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <data>
+
+        <!-- Tax Group -->
+        <record id="view_invoice_condition_search" model="ir.ui.view">
+            <field name="name">invoice.condition.search</field>
+            <field name="model">invoice.condition</field>
+            <field name="arch" type="xml">
+                <search string="Condicion de Venta">
+                    <field name="name" filter_domain="[('name','ilike',self)]" string="Condicion"/>
+                    <field name="code" filter_domain="[('code','ilike',self)]" string="Codigo"/>
+                </search>
+            </field>
+        </record>
+        <record id="view_invoice_condition_tree" model="ir.ui.view">
+            <field name="name">invoice.condition.tree</field>
+            <field name="model">invoice.condition</field>
+            <field name="arch" type="xml">
+                <tree string="Condicion de Venta" toolbar="1">
+                    <field name="name"/>
+                    <field name="code"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_invoice_condition_form" model="ir.ui.view">
+            <field name="name">invoice.condition.form</field>
+            <field name="model">invoice.condition</field>
+            <field name="arch" type="xml">
+                <form string="Condicion de Venta">
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="code"/>
+                            <field name="active"/>
+                        </group>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <record id="action_invoice_condition_list" model="ir.actions.act_window">
+            <field name="name">Condicion de Venta</field>
+            <field name="res_model">invoice.condition</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="view_invoice_condition_tree"/>
+            <field name="search_view_id" ref="view_invoice_condition_search"/>
+        </record>
+
+
+    </data>
+</odoo>

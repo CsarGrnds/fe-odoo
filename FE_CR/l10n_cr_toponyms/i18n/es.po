@@ -1,0 +1,55 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* solt_ebilling_ec_sri
+#
+#. module: l10n_cr_address
+#: field:res.country.county,code:0
+#: field:res.country.district,code:0
+#: field:res.country.region,code:0
+msgid "Code"
+msgstr "Código"
+
+#. module: l10n_cr_address
+#: field:res.country.county,name:0
+#: field:res.country.district,name:0
+#: field:res.country.region,name:0
+msgid "Name"
+msgstr "Nombre"
+
+#. module: l10n_cr_address
+#: model:ir.model,name:l10n_cr_address.model_res_country_district
+#: view:res.partner:0
+#: field:res.partner,district_id:0
+msgid "District"
+msgstr "Distrito"
+
+#. module: l10n_cr_address
+#: field:res.country.region,country_id:0
+msgid "Country"
+msgstr "País"
+
+#. module: l10n_cr_address
+#: model:ir.model,name:l10n_cr_address.model_res_country_region
+#: field:res.country.district,region_id:0
+#: view:res.partner:0
+#: field:res.partner,region_id:0
+msgid "Region"
+msgstr "Región"
+
+#. module: l10n_cr_address
+#: model:ir.model,name:l10n_cr_address.model_res_country_county
+#: field:res.country.district,county_id:0
+#: view:res.partner:0
+#: field:res.partner,county_id:0
+msgid "County"
+msgstr "Cantón"
+
+#. module: l10n_cr_address
+#: field:res.country.county,state_id:0
+msgid "State"
+msgstr "Estado"
+
+#. module: l10n_cr_address
+#: model:ir.model,name:l10n_cr_address.model_res_partner
+msgid "Partner"
+msgstr "Empresa"
