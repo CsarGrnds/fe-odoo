@@ -2,7 +2,7 @@
 {
     "name" : "Factura Electrónica Costa Rica",
     "version" : "1.0",
-    "author" : "Soltein",
+    "author" : "Nagsis",
     "category" : "Accountant",
     "description" : """Factura Electrónica Costa Rica""",
     "depends" : [
